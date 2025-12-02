@@ -1,0 +1,240 @@
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Basic Factual Accuracy","average_score":9.55}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Clarity, Simplicity & Inspiration","average_score":8.67}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Content Relevance & Scope Control","average_score":9.64}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Domain Knowledge Accuracy","average_score":9.53}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Error Identification & Correction Precision","average_score":8.66}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Higher-Order Thinking & Skill Development","average_score":8.39}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Instruction Following & Task Completion","average_score":9.61}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.3}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Personalization, Adaptation & Learning Support","average_score":9.8}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Reasoning Process Rigor","average_score":9.17}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Role & Tone Consistency","average_score":9.64}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-r1","metrics":"Scenario Element Integration","average_score":9.45}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Basic Factual Accuracy","average_score":9.58}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Clarity, Simplicity & Inspiration","average_score":8.47}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Content Relevance & Scope Control","average_score":9.48}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Domain Knowledge Accuracy","average_score":9.3}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Error Identification & Correction Precision","average_score":9.32}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Higher-Order Thinking & Skill Development","average_score":7.53}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Instruction Following & Task Completion","average_score":9.39}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.48}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Personalization, Adaptation & Learning Support","average_score":8.92}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Reasoning Process Rigor","average_score":9.05}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Role & Tone Consistency","average_score":9.32}
+{"eval_model":"deepseek-r1","gen_model":"deepseek-v3","metrics":"Scenario Element Integration","average_score":9.1}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Basic Factual Accuracy","average_score":9.42}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Clarity, Simplicity & Inspiration","average_score":8.49}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Content Relevance & Scope Control","average_score":9.46}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Domain Knowledge Accuracy","average_score":9.24}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Error Identification & Correction Precision","average_score":9.09}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Higher-Order Thinking & Skill Development","average_score":7.67}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Instruction Following & Task Completion","average_score":9.25}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.44}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Personalization, Adaptation & Learning Support","average_score":8.97}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Reasoning Process Rigor","average_score":8.62}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Role & Tone Consistency","average_score":9.34}
+{"eval_model":"deepseek-r1","gen_model":"qwen-max","metrics":"Scenario Element Integration","average_score":9.05}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Basic Factual Accuracy","average_score":9.08}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Clarity, Simplicity & Inspiration","average_score":8.28}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Content Relevance & Scope Control","average_score":9.2}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Domain Knowledge Accuracy","average_score":8.82}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Error Identification & Correction Precision","average_score":8.98}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Higher-Order Thinking & Skill Development","average_score":7.16}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Instruction Following & Task Completion","average_score":8.87}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Motivation, Guidance & Positive Feedback","average_score":6.86}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Personalization, Adaptation & Learning Support","average_score":8.2}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Reasoning Process Rigor","average_score":8.57}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Role & Tone Consistency","average_score":9.02}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-14b-instruct","metrics":"Scenario Element Integration","average_score":8.51}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Basic Factual Accuracy","average_score":8.73}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Clarity, Simplicity & Inspiration","average_score":8.22}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Content Relevance & Scope Control","average_score":8.98}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Domain Knowledge Accuracy","average_score":9.0}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Error Identification & Correction Precision","average_score":8.3}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Higher-Order Thinking & Skill Development","average_score":7.27}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Instruction Following & Task Completion","average_score":8.72}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Motivation, Guidance & Positive Feedback","average_score":6.61}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Personalization, Adaptation & Learning Support","average_score":8.68}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Reasoning Process Rigor","average_score":8.05}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Role & Tone Consistency","average_score":9.23}
+{"eval_model":"deepseek-r1","gen_model":"qwen2.5-7b-instruct","metrics":"Scenario Element Integration","average_score":8.55}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Basic Factual Accuracy","average_score":9.51}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Clarity, Simplicity & Inspiration","average_score":8.75}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Content Relevance & Scope Control","average_score":9.44}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Domain Knowledge Accuracy","average_score":9.45}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Error Identification & Correction Precision","average_score":7.61}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Higher-Order Thinking & Skill Development","average_score":8.53}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Instruction Following & Task Completion","average_score":9.47}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.76}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Personalization, Adaptation & Learning Support","average_score":9.64}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Reasoning Process Rigor","average_score":8.85}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Role & Tone Consistency","average_score":9.14}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-r1","metrics":"Scenario Element Integration","average_score":9.06}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Basic Factual Accuracy","average_score":9.57}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Clarity, Simplicity & Inspiration","average_score":8.61}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Content Relevance & Scope Control","average_score":9.25}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Domain Knowledge Accuracy","average_score":9.27}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Error Identification & Correction Precision","average_score":7.23}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Higher-Order Thinking & Skill Development","average_score":7.98}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Instruction Following & Task Completion","average_score":9.21}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.56}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Personalization, Adaptation & Learning Support","average_score":8.94}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Reasoning Process Rigor","average_score":8.76}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Role & Tone Consistency","average_score":9.0}
+{"eval_model":"deepseek-v3","gen_model":"deepseek-v3","metrics":"Scenario Element Integration","average_score":8.59}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Basic Factual Accuracy","average_score":9.38}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Clarity, Simplicity & Inspiration","average_score":8.53}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Content Relevance & Scope Control","average_score":9.12}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Domain Knowledge Accuracy","average_score":9.23}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Error Identification & Correction Precision","average_score":7.43}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Higher-Order Thinking & Skill Development","average_score":7.99}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Instruction Following & Task Completion","average_score":9.16}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.85}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Personalization, Adaptation & Learning Support","average_score":9.05}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Reasoning Process Rigor","average_score":8.57}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Role & Tone Consistency","average_score":9.0}
+{"eval_model":"deepseek-v3","gen_model":"qwen-max","metrics":"Scenario Element Integration","average_score":8.61}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Basic Factual Accuracy","average_score":9.28}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Clarity, Simplicity & Inspiration","average_score":8.5}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Content Relevance & Scope Control","average_score":9.03}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Domain Knowledge Accuracy","average_score":9.14}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Error Identification & Correction Precision","average_score":7.14}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Higher-Order Thinking & Skill Development","average_score":7.81}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Instruction Following & Task Completion","average_score":8.94}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.55}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Personalization, Adaptation & Learning Support","average_score":8.71}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Reasoning Process Rigor","average_score":8.35}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Role & Tone Consistency","average_score":8.82}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-14b-instruct","metrics":"Scenario Element Integration","average_score":8.25}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Basic Factual Accuracy","average_score":9.27}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Clarity, Simplicity & Inspiration","average_score":8.55}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Content Relevance & Scope Control","average_score":9.08}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Domain Knowledge Accuracy","average_score":9.12}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Error Identification & Correction Precision","average_score":6.77}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Higher-Order Thinking & Skill Development","average_score":7.86}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Instruction Following & Task Completion","average_score":8.96}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.05}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Personalization, Adaptation & Learning Support","average_score":8.95}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Reasoning Process Rigor","average_score":8.42}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Role & Tone Consistency","average_score":8.82}
+{"eval_model":"deepseek-v3","gen_model":"qwen2.5-7b-instruct","metrics":"Scenario Element Integration","average_score":8.53}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Basic Factual Accuracy","average_score":9.48}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Clarity, Simplicity & Inspiration","average_score":8.73}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Content Relevance & Scope Control","average_score":9.59}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Domain Knowledge Accuracy","average_score":9.17}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Error Identification & Correction Precision","average_score":9.05}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Higher-Order Thinking & Skill Development","average_score":8.35}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Instruction Following & Task Completion","average_score":9.13}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Motivation, Guidance & Positive Feedback","average_score":8.45}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Personalization, Adaptation & Learning Support","average_score":9.18}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Reasoning Process Rigor","average_score":8.89}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Role & Tone Consistency","average_score":9.11}
+{"eval_model":"gpt-4o","gen_model":"deepseek-r1","metrics":"Scenario Element Integration","average_score":8.65}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Basic Factual Accuracy","average_score":9.54}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Clarity, Simplicity & Inspiration","average_score":8.72}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Content Relevance & Scope Control","average_score":9.51}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Domain Knowledge Accuracy","average_score":9.05}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Error Identification & Correction Precision","average_score":9.14}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Higher-Order Thinking & Skill Development","average_score":8.05}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Instruction Following & Task Completion","average_score":9.16}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Motivation, Guidance & Positive Feedback","average_score":8.59}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Personalization, Adaptation & Learning Support","average_score":8.95}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Reasoning Process Rigor","average_score":8.75}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Role & Tone Consistency","average_score":9.02}
+{"eval_model":"gpt-4o","gen_model":"deepseek-v3","metrics":"Scenario Element Integration","average_score":8.63}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Basic Factual Accuracy","average_score":9.58}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Clarity, Simplicity & Inspiration","average_score":8.65}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Content Relevance & Scope Control","average_score":9.43}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Domain Knowledge Accuracy","average_score":8.83}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Error Identification & Correction Precision","average_score":9.07}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Higher-Order Thinking & Skill Development","average_score":8.08}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Instruction Following & Task Completion","average_score":9.14}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Motivation, Guidance & Positive Feedback","average_score":8.56}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Personalization, Adaptation & Learning Support","average_score":8.97}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Reasoning Process Rigor","average_score":8.89}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Role & Tone Consistency","average_score":8.95}
+{"eval_model":"gpt-4o","gen_model":"qwen-max","metrics":"Scenario Element Integration","average_score":8.64}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Basic Factual Accuracy","average_score":9.45}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Clarity, Simplicity & Inspiration","average_score":8.51}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Content Relevance & Scope Control","average_score":9.44}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Domain Knowledge Accuracy","average_score":8.88}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Error Identification & Correction Precision","average_score":8.93}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Higher-Order Thinking & Skill Development","average_score":7.83}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Instruction Following & Task Completion","average_score":9.02}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Motivation, Guidance & Positive Feedback","average_score":8.2}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Personalization, Adaptation & Learning Support","average_score":8.88}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Reasoning Process Rigor","average_score":8.6}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Role & Tone Consistency","average_score":9.07}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-14b-instruct","metrics":"Scenario Element Integration","average_score":8.43}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Basic Factual Accuracy","average_score":9.45}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Clarity, Simplicity & Inspiration","average_score":8.57}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Content Relevance & Scope Control","average_score":9.38}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Domain Knowledge Accuracy","average_score":8.85}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Error Identification & Correction Precision","average_score":8.59}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Higher-Order Thinking & Skill Development","average_score":8.0}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Instruction Following & Task Completion","average_score":9.01}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Motivation, Guidance & Positive Feedback","average_score":8.2}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Personalization, Adaptation & Learning Support","average_score":8.85}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Reasoning Process Rigor","average_score":8.65}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Role & Tone Consistency","average_score":9.02}
+{"eval_model":"gpt-4o","gen_model":"qwen2.5-7b-instruct","metrics":"Scenario Element Integration","average_score":8.65}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Basic Factual Accuracy","average_score":9.78}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Clarity, Simplicity & Inspiration","average_score":8.47}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Content Relevance & Scope Control","average_score":9.78}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Domain Knowledge Accuracy","average_score":9.82}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Error Identification & Correction Precision","average_score":9.7}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Higher-Order Thinking & Skill Development","average_score":8.19}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Instruction Following & Task Completion","average_score":9.65}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Motivation, Guidance & Positive Feedback","average_score":8.35}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Personalization, Adaptation & Learning Support","average_score":9.86}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Reasoning Process Rigor","average_score":9.61}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Role & Tone Consistency","average_score":9.7}
+{"eval_model":"qwq-plus","gen_model":"deepseek-r1","metrics":"Scenario Element Integration","average_score":9.58}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Basic Factual Accuracy","average_score":9.42}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Clarity, Simplicity & Inspiration","average_score":8.25}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Content Relevance & Scope Control","average_score":9.57}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Domain Knowledge Accuracy","average_score":9.09}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Error Identification & Correction Precision","average_score":9.52}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Higher-Order Thinking & Skill Development","average_score":7.22}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Instruction Following & Task Completion","average_score":9.36}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.62}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Personalization, Adaptation & Learning Support","average_score":9.23}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Reasoning Process Rigor","average_score":9.23}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Role & Tone Consistency","average_score":9.39}
+{"eval_model":"qwq-plus","gen_model":"deepseek-v3","metrics":"Scenario Element Integration","average_score":9.32}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Basic Factual Accuracy","average_score":9.64}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Clarity, Simplicity & Inspiration","average_score":8.39}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Content Relevance & Scope Control","average_score":9.59}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Domain Knowledge Accuracy","average_score":9.47}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Error Identification & Correction Precision","average_score":9.3}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Higher-Order Thinking & Skill Development","average_score":7.48}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Instruction Following & Task Completion","average_score":9.45}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.68}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Personalization, Adaptation & Learning Support","average_score":9.39}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Reasoning Process Rigor","average_score":9.1}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Role & Tone Consistency","average_score":9.48}
+{"eval_model":"qwq-plus","gen_model":"qwen-max","metrics":"Scenario Element Integration","average_score":9.36}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Basic Factual Accuracy","average_score":9.49}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Clarity, Simplicity & Inspiration","average_score":8.2}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Content Relevance & Scope Control","average_score":9.48}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Domain Knowledge Accuracy","average_score":8.98}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Error Identification & Correction Precision","average_score":9.2}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Higher-Order Thinking & Skill Development","average_score":7.1}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Instruction Following & Task Completion","average_score":9.15}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.64}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Personalization, Adaptation & Learning Support","average_score":8.77}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Reasoning Process Rigor","average_score":8.83}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Role & Tone Consistency","average_score":9.41}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-14b-instruct","metrics":"Scenario Element Integration","average_score":9.06}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Basic Factual Accuracy","average_score":9.08}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Clarity, Simplicity & Inspiration","average_score":8.1}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Content Relevance & Scope Control","average_score":9.31}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Domain Knowledge Accuracy","average_score":8.98}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Error Identification & Correction Precision","average_score":8.91}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Higher-Order Thinking & Skill Development","average_score":7.02}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Instruction Following & Task Completion","average_score":9.03}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Motivation, Guidance & Positive Feedback","average_score":7.18}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Personalization, Adaptation & Learning Support","average_score":9.09}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Reasoning Process Rigor","average_score":8.61}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Role & Tone Consistency","average_score":9.3}
+{"eval_model":"qwq-plus","gen_model":"qwen2.5-7b-instruct","metrics":"Scenario Element Integration","average_score":9.33}

@@ -1,0 +1,135 @@
+{
+    "design_zh.jsonl": {
+        "k12 level": {
+            "语文'": 1,
+            "数学'": 3,
+            "英语'": 3,
+            "物理'": 3,
+            "化学'": 3,
+            "生物'": 2,
+            "历史'": 2,
+            "地理'": 2,
+            "合计": 0
+        },
+        "higher education": {
+            "数学'": 2,
+            "物理学'": 3,
+            "化学'": 3,
+            "生物学'": 2,
+            "计算机科学'": 3,
+            "自动控制'": 2,
+            "水产养殖'": 3,
+            "作物科学'": 3,
+            "应用经济学'": 2,
+            "理论经济学'": 3,
+            "体育教育学'": 3,
+            "法学'": 3,
+            "商业管理学'": 3,
+            "公共管理学'": 3,
+            "基础医学'": 3,
+            "临床医学'": 3,
+            "社会学'": 3,
+            "文学与艺术'": 2,
+            "心理学'": 2,
+            "历史学'": 3,
+            "军事学'": 3,
+            "普通教育学'": 2,
+            "合计": 0
+        }
+    },
+    "student_profile_zh.jsonl": {
+        "k12 level": {
+            "'语文": 21,
+            "'数学": 19,
+            "'英语": 18,
+            "'物理": 19,
+            "'化学": 20,
+            "'生物": 19,
+            "'历史": 21,
+            "'地理": 18,
+            "合计": 0
+        },
+        "higher education": {
+            "'数学": 20,
+            "'化学": 21,
+            "'物理学": 20,
+            "'生物学": 19,
+            "'计算机科学": 19,
+            "'自动控制": 21,
+            "'水产养殖": 21,
+            "'作物科学": 21,
+            "'应用经济学": 21,
+            "'普通教育学": 21,
+            "'体育教育学": 19,
+            "'法学": 20,
+            "'商业管理学": 21,
+            "'公共管理学": 19,
+            "'基础医学": 20,
+            "'临床医学": 20,
+            "'社会学": 20,
+            "'理论经济学": 18,
+            "'文学与艺术": 16,
+            "'心理学": 12,
+            "'历史学": 12,
+            "'军事学": 12,
+            "合计": 0
+        }
+    },
+    "design.jsonl": {
+        "k12 level": {
+            "Geography'": 9
+            
+        },
+        "higher education": {
+            "Mathematics'": 15,
+            "Physics'": 15,
+            "Chemistry'": 15,
+            "Biology'": 15,
+            "Computer Science'": 15,
+            "Automation'": 15,
+            "Crop Science'": 15,
+            "Applied Economics'": 15,
+            "Theoretical Economics'": 15,
+            "General Pedagogy'": 15,
+            "Physical Education'": 15,
+            "Law'": 15,
+            "Business Administration'": 15,
+            "Public Administration'": 15,
+            "Basic Medicine'": 15,
+            "Clinical Medicine'": 15,
+            "Sociology'": 15,
+            "Literature and Art'": 15,
+            "Psychology'": 15,
+            "History'": 15,
+            "Military Science'": 15,
+            "Aquaculture'": 11,
+            "合计":326
+        }
+    },
+    "student_profile.jsonl": {
+        "k12 level": {
+            "'Mathematics": 14,
+            "'English": 14,
+            "'Physics": 15,
+            "'Chemistry": 14,
+            "'Biology": 14,
+            "'History": 15,
+            "'Geography": 13,
+            "'Chinese": 8,
+            "合计":107
+        },
+        "higher education": {
+            "'Mathematics": 15,
+            "'Physics": 15,
+            "'Chemistry": 15,
+            "'Biology": 14,
+            "'Computer Science": 15,
+            "'Automation": 14,
+            "'Aquaculture": 13,
+            "'Crop Science": 12,
+            "'Applied Economics": 15,
+            "'Theoretical Economics": 4,
+            "合计":132
+        }
+    }
+}
