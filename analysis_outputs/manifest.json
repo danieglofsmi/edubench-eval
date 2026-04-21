@@ -1,0 +1,17 @@
+{
+  "input": "/Users/liangxinyue/Downloads/edubench/results_merge.jsonl",
+  "report": "/Users/liangxinyue/Downloads/edubench/edubench_analysis_report.md",
+  "output_dir": "/Users/liangxinyue/Downloads/edubench/analysis_outputs",
+  "files": [
+    "calibration_curve.csv",
+    "easiest_questions.csv",
+    "evaluator_generator_affinity.csv",
+    "evaluator_summary.csv",
+    "hardest_questions.csv",
+    "language_task_table.csv",
+    "metric_evaluator_table.csv",
+    "model_summary.csv",
+    "task_evaluator_table.csv",
+    "task_model_table.csv"
+  ]
+}

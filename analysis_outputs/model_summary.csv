@@ -1,0 +1,6 @@
+model,n,human_mean_score,human_score_std,high_score_rate_human_mean_ge_4_5
+deepseek-r1,1119,4.6408,0.7128,0.8284
+deepseek-v3,1100,4.2688,0.7781,0.4664
+qwen-max,1110,4.3946,0.7102,0.5649
+qwen2.5-14b-instruct,1099,4.1313,0.7438,0.3667
+qwen2.5-7b-instruct,1108,4.1402,0.8300,0.4125

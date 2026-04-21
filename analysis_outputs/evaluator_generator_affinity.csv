@@ -1,0 +1,17 @@
+evaluator,comparison,group,n,signed_bias_vs_human_mean,mae_to_human_mean
+deepseek-r1,own_vs_other_overall,own,1119,0.0751,0.4349
+deepseek-r1,own_vs_other_overall,other,4417,0.3110,0.6476
+deepseek-r1,own_minus_other,delta,,-0.2359,-0.2127
+deepseek-r1,by_generator_model,deepseek-r1,1119,0.0751,0.4349
+deepseek-r1,by_generator_model,deepseek-v3,1100,0.3876,0.6342
+deepseek-r1,by_generator_model,qwen-max,1110,0.2333,0.5511
+deepseek-r1,by_generator_model,qwen2.5-14b-instruct,1099,0.3473,0.6840
+deepseek-r1,by_generator_model,qwen2.5-7b-instruct,1108,0.2768,0.7214
+deepseek-v3,own_vs_other_overall,own,1099,0.4249,0.6724
+deepseek-v3,own_vs_other_overall,other,4429,0.3308,0.6115
+deepseek-v3,own_minus_other,delta,,0.0942,0.0609
+deepseek-v3,by_generator_model,deepseek-r1,1118,0.1073,0.4168
+deepseek-v3,by_generator_model,deepseek-v3,1099,0.4249,0.6724
+deepseek-v3,by_generator_model,qwen-max,1110,0.2730,0.5685
+deepseek-v3,by_generator_model,qwen2.5-14b-instruct,1093,0.4742,0.7109
+deepseek-v3,by_generator_model,qwen2.5-7b-instruct,1108,0.4726,0.7530
