@@ -1,0 +1,13 @@
+education_level,language,n,human_mean
+Elementary School,en,222,4.4054
+Elementary School,zh,252,4.3929
+Middle School,en,160,4.3167
+Middle School,zh,134,4.0174
+High School,en,230,4.6217
+High School,zh,221,4.3710
+Undergraduate,en,1089,4.2770
+Undergraduate,zh,486,4.1420
+Master,en,585,4.4353
+Master,zh,998,4.2912
+PhD,en,495,4.3966
+PhD,zh,664,4.2575

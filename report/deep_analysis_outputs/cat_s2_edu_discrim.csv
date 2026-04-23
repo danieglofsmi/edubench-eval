@@ -1,0 +1,7 @@
+group,n,human_mean,model_spread,model_range,best_model,best_score,worst_model,worst_score
+Elementary School,474,4.3987,0.2231,0.6694,deepseek-r1,4.7388,qwen2.5-14b-instruct,4.0694
+High School,451,4.4989,0.2178,0.6462,deepseek-r1,4.8425,qwen2.5-14b-instruct,4.1963
+Master,1583,4.3445,0.2163,0.6114,deepseek-r1,4.7112,qwen2.5-7b-instruct,4.0998
+Middle School,294,4.1803,0.2087,0.6215,deepseek-r1,4.5537,qwen2.5-7b-instruct,3.9322
+PhD,1159,4.3169,0.1744,0.5033,deepseek-r1,4.6168,qwen2.5-7b-instruct,4.1135
+Undergraduate,1575,4.2353,0.1699,0.5029,deepseek-r1,4.5148,qwen2.5-14b-instruct,4.0118

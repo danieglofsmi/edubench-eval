@@ -1,0 +1,11 @@
+evaluator,generator,n,bias,mae,is_own
+deepseek-r1,deepseek-r1,1119,0.0751,0.4349,True
+deepseek-r1,deepseek-v3,1100,0.3876,0.6342,False
+deepseek-r1,qwen-max,1110,0.2333,0.5511,False
+deepseek-r1,qwen2.5-14b-instruct,1099,0.3473,0.684,False
+deepseek-r1,qwen2.5-7b-instruct,1108,0.2768,0.7214,False
+deepseek-v3,deepseek-r1,1118,0.1073,0.4168,False
+deepseek-v3,deepseek-v3,1099,0.4249,0.6724,True
+deepseek-v3,qwen-max,1110,0.273,0.5685,False
+deepseek-v3,qwen2.5-14b-instruct,1093,0.4742,0.7109,False
+deepseek-v3,qwen2.5-7b-instruct,1108,0.4726,0.753,False

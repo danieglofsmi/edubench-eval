@@ -1,0 +1,93 @@
+subject,model_a,model_b,paired_questions,mean_diff,p_value,significant
+Applied Economics,deepseek-r1,deepseek-v3,5,0.4016,0.1250,no
+Applied Economics,deepseek-r1,qwen-max,5,0.2226,0.2500,no
+Applied Economics,deepseek-r1,qwen2.5-14b-instruct,5,0.4060,0.1250,no
+Applied Economics,deepseek-r1,qwen2.5-7b-instruct,5,0.4329,0.1250,no
+Aquaculture,deepseek-r1,deepseek-v3,10,0.5493,0.0020,yes
+Aquaculture,deepseek-r1,qwen-max,10,0.3932,0.0273,yes
+Aquaculture,deepseek-r1,qwen2.5-14b-instruct,10,0.7057,0.0039,yes
+Aquaculture,deepseek-r1,qwen2.5-7b-instruct,10,0.6317,0.0020,yes
+Basic Medicine,deepseek-r1,deepseek-v3,10,0.4980,0.0039,yes
+Basic Medicine,deepseek-r1,qwen-max,10,0.3404,0.0156,yes
+Basic Medicine,deepseek-r1,qwen2.5-14b-instruct,10,0.6914,0.0039,yes
+Basic Medicine,deepseek-r1,qwen2.5-7b-instruct,10,0.7697,0.0039,yes
+Biology,deepseek-r1,deepseek-v3,11,0.3628,0.1016,no
+Biology,deepseek-r1,qwen-max,11,0.1865,0.1230,no
+Biology,deepseek-r1,qwen2.5-14b-instruct,11,0.6422,0.0098,yes
+Biology,deepseek-r1,qwen2.5-7b-instruct,11,0.4051,0.0244,yes
+Business Administration,deepseek-r1,deepseek-v3,9,0.2759,0.3125,no
+Business Administration,deepseek-r1,qwen-max,9,0.2145,0.3750,no
+Business Administration,deepseek-r1,qwen2.5-14b-instruct,9,0.2840,0.3594,no
+Business Administration,deepseek-r1,qwen2.5-7b-instruct,9,0.1966,0.4258,no
+Chemistry,deepseek-r1,deepseek-v3,10,0.5087,0.0039,yes
+Chemistry,deepseek-r1,qwen-max,10,0.4411,0.0039,yes
+Chemistry,deepseek-r1,qwen2.5-14b-instruct,10,0.6884,0.0020,yes
+Chemistry,deepseek-r1,qwen2.5-7b-instruct,10,0.5916,0.0039,yes
+Chinese,deepseek-r1,deepseek-v3,6,0.5560,0.0938,no
+Chinese,deepseek-r1,qwen-max,6,0.5338,0.3125,no
+Chinese,deepseek-r1,qwen2.5-14b-instruct,6,0.7949,0.0312,yes
+Chinese,deepseek-r1,qwen2.5-7b-instruct,6,0.9509,0.0625,no
+Clinical Medicine,deepseek-r1,deepseek-v3,6,0.6720,0.0625,no
+Clinical Medicine,deepseek-r1,qwen-max,6,0.4636,0.1250,no
+Clinical Medicine,deepseek-r1,qwen2.5-14b-instruct,6,0.7857,0.0625,no
+Clinical Medicine,deepseek-r1,qwen2.5-7b-instruct,6,0.6974,0.0625,no
+Computer Science,deepseek-r1,deepseek-v3,8,0.2585,0.3828,no
+Computer Science,deepseek-r1,qwen-max,8,0.1609,0.3047,no
+Computer Science,deepseek-r1,qwen2.5-14b-instruct,8,0.5089,0.0391,yes
+Computer Science,deepseek-r1,qwen2.5-7b-instruct,8,0.5973,0.0312,yes
+Crop Science,deepseek-r1,deepseek-v3,7,-0.0885,0.5625,no
+Crop Science,deepseek-r1,qwen-max,7,0.0093,0.4375,no
+Crop Science,deepseek-r1,qwen2.5-14b-instruct,7,0.1221,0.3750,no
+Crop Science,deepseek-r1,qwen2.5-7b-instruct,7,0.1950,0.3750,no
+English,deepseek-r1,deepseek-v3,6,0.6485,0.0312,yes
+English,deepseek-r1,qwen-max,6,0.5628,0.0312,yes
+English,deepseek-r1,qwen2.5-14b-instruct,6,0.9971,0.0312,yes
+English,deepseek-r1,qwen2.5-7b-instruct,6,0.7113,0.0312,yes
+General Pedagogy,deepseek-r1,deepseek-v3,6,0.5935,0.1250,no
+General Pedagogy,deepseek-r1,qwen-max,6,0.4026,0.0312,yes
+General Pedagogy,deepseek-r1,qwen2.5-14b-instruct,6,1.0130,0.0312,yes
+General Pedagogy,deepseek-r1,qwen2.5-7b-instruct,6,0.7460,0.0312,yes
+Geography,deepseek-r1,deepseek-v3,6,0.3327,0.1250,no
+Geography,deepseek-r1,qwen-max,6,0.1409,0.0625,no
+Geography,deepseek-r1,qwen2.5-14b-instruct,6,0.2682,0.0625,no
+Geography,deepseek-r1,qwen2.5-7b-instruct,6,0.3743,0.0312,yes
+History,deepseek-r1,deepseek-v3,14,0.4067,0.0015,yes
+History,deepseek-r1,qwen-max,14,0.2885,0.0505,no
+History,deepseek-r1,qwen2.5-14b-instruct,14,0.5868,0.0231,yes
+History,deepseek-r1,qwen2.5-7b-instruct,14,0.3867,0.0342,yes
+Law,deepseek-r1,deepseek-v3,5,0.4131,0.6250,no
+Law,deepseek-r1,qwen-max,5,0.0726,0.8125,no
+Law,deepseek-r1,qwen2.5-14b-instruct,5,0.6833,0.1875,no
+Law,deepseek-r1,qwen2.5-7b-instruct,5,0.3337,0.2500,no
+Literature and Art,deepseek-r1,deepseek-v3,9,0.2727,0.0742,no
+Literature and Art,deepseek-r1,qwen-max,9,0.2446,0.1094,no
+Literature and Art,deepseek-r1,qwen2.5-14b-instruct,9,0.4607,0.0078,yes
+Literature and Art,deepseek-r1,qwen2.5-7b-instruct,9,0.4522,0.0156,yes
+Mathematics,deepseek-r1,deepseek-v3,11,0.2838,0.1113,no
+Mathematics,deepseek-r1,qwen-max,11,0.3165,0.1738,no
+Mathematics,deepseek-r1,qwen2.5-14b-instruct,11,0.2656,0.0537,no
+Mathematics,deepseek-r1,qwen2.5-7b-instruct,11,0.7912,0.0010,yes
+Military Science,deepseek-r1,deepseek-v3,6,0.1870,0.4375,no
+Military Science,deepseek-r1,qwen-max,6,0.0898,0.6250,no
+Military Science,deepseek-r1,qwen2.5-14b-instruct,6,0.5014,0.0938,no
+Military Science,deepseek-r1,qwen2.5-7b-instruct,6,0.6005,0.0312,yes
+Physical Education,deepseek-r1,deepseek-v3,5,0.6700,0.1250,no
+Physical Education,deepseek-r1,qwen-max,5,0.0161,1.0000,no
+Physical Education,deepseek-r1,qwen2.5-14b-instruct,5,0.3711,0.3125,no
+Physical Education,deepseek-r1,qwen2.5-7b-instruct,5,0.4056,0.2500,no
+Physics,deepseek-r1,deepseek-v3,14,0.4950,0.0099,yes
+Physics,deepseek-r1,qwen-max,14,0.1690,0.2894,no
+Physics,deepseek-r1,qwen2.5-14b-instruct,14,0.6511,0.0022,yes
+Physics,deepseek-r1,qwen2.5-7b-instruct,14,0.4868,0.0022,yes
+Psychology,deepseek-r1,deepseek-v3,9,0.3624,0.2188,no
+Psychology,deepseek-r1,qwen-max,9,0.0216,0.7422,no
+Psychology,deepseek-r1,qwen2.5-14b-instruct,9,-0.0428,0.8203,no
+Psychology,deepseek-r1,qwen2.5-7b-instruct,9,0.3735,0.0156,yes
+Public Administration,deepseek-r1,deepseek-v3,9,0.3551,0.0781,no
+Public Administration,deepseek-r1,qwen-max,9,0.1742,0.2969,no
+Public Administration,deepseek-r1,qwen2.5-14b-instruct,9,0.4834,0.0234,yes
+Public Administration,deepseek-r1,qwen2.5-7b-instruct,9,0.5957,0.0039,yes
+Theoretical Economics,deepseek-r1,deepseek-v3,8,0.3591,0.0312,yes
+Theoretical Economics,deepseek-r1,qwen-max,8,0.4053,0.0156,yes
+Theoretical Economics,deepseek-r1,qwen2.5-14b-instruct,8,0.6082,0.0156,yes
+Theoretical Economics,deepseek-r1,qwen2.5-7b-instruct,8,0.6974,0.0312,yes

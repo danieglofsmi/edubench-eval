@@ -1,0 +1,126 @@
+subject,evaluator,n,mae,exact_match_rate,kendall_tau
+Applied Economics,EduBenchEvaluator,145,0.5287,0.7241,0.3789
+Applied Economics,deepseek-r1,145,0.5701,0.6483,0.4209
+Applied Economics,deepseek-v3,145,0.5793,0.6345,0.3314
+Applied Economics,gpt-4o,145,0.5908,0.6000,0.3332
+Applied Economics,qwq-plus,145,0.6023,0.6345,0.2990
+Aquaculture,EduBenchEvaluator,285,0.3450,0.7404,0.5466
+Aquaculture,deepseek-r1,285,0.4795,0.5930,0.3682
+Aquaculture,deepseek-v3,285,0.4585,0.6035,0.3656
+Aquaculture,gpt-4o,277,0.4922,0.5848,0.2556
+Aquaculture,qwq-plus,281,0.4769,0.6050,0.3013
+Automation,EduBenchEvaluator,90,0.3259,0.8444,0.6844
+Automation,deepseek-r1,90,0.5407,0.6444,0.1829
+Automation,deepseek-v3,90,0.4296,0.7333,0.5002
+Automation,gpt-4o,88,0.5644,0.6364,0.1704
+Automation,qwq-plus,90,0.5148,0.6889,0.3709
+Basic Medicine,EduBenchEvaluator,309,0.5868,0.6472,0.3923
+Basic Medicine,deepseek-r1,309,0.7238,0.4951,0.2655
+Basic Medicine,deepseek-v3,309,0.6926,0.5340,0.2693
+Basic Medicine,gpt-4o,291,0.6919,0.4983,0.2597
+Basic Medicine,qwq-plus,298,0.7808,0.5034,0.2011
+Biology,EduBenchEvaluator,282,0.4894,0.6667,0.4050
+Biology,deepseek-r1,282,0.5485,0.5603,0.3844
+Biology,deepseek-v3,280,0.6238,0.5214,0.3616
+Biology,gpt-4o,279,0.5771,0.5305,0.3208
+Biology,qwq-plus,280,0.5940,0.5429,0.3132
+Business Administration,EduBenchEvaluator,255,0.5647,0.6471,0.5269
+Business Administration,deepseek-r1,255,0.8824,0.4627,0.2821
+Business Administration,deepseek-v3,255,0.9516,0.4627,0.2724
+Business Administration,gpt-4o,254,0.9081,0.5157,0.2852
+Business Administration,qwq-plus,251,0.9323,0.4661,0.1971
+Chemistry,EduBenchEvaluator,290,0.4046,0.7034,0.4974
+Chemistry,deepseek-r1,290,0.5874,0.5310,0.2984
+Chemistry,deepseek-v3,290,0.5092,0.6000,0.2985
+Chemistry,gpt-4o,277,0.5439,0.5740,0.2074
+Chemistry,qwq-plus,290,0.5310,0.5897,0.3040
+Chinese,EduBenchEvaluator,159,0.4822,0.7107,0.4644
+Chinese,deepseek-r1,159,0.5975,0.5535,0.3940
+Chinese,deepseek-v3,159,0.6164,0.5849,0.4298
+Chinese,gpt-4o,155,0.6753,0.4710,0.1859
+Chinese,qwq-plus,152,0.6711,0.5132,0.2719
+Clinical Medicine,EduBenchEvaluator,133,0.4060,0.7218,0.6390
+Clinical Medicine,deepseek-r1,133,0.6667,0.5263,0.1992
+Clinical Medicine,deepseek-v3,133,0.6717,0.5714,0.1793
+Clinical Medicine,gpt-4o,133,0.6491,0.5564,0.1968
+Clinical Medicine,qwq-plus,131,0.6107,0.5802,0.3282
+Computer Science,EduBenchEvaluator,224,0.3542,0.7723,0.5475
+Computer Science,deepseek-r1,224,0.6042,0.6652,0.3528
+Computer Science,deepseek-v3,224,0.5536,0.6741,0.3196
+Computer Science,gpt-4o,214,0.5639,0.6542,0.2759
+Computer Science,qwq-plus,220,0.5697,0.6727,0.3298
+Crop Science,EduBenchEvaluator,211,0.5434,0.7251,0.3497
+Crop Science,deepseek-r1,211,0.5829,0.6066,0.3285
+Crop Science,deepseek-v3,211,0.6003,0.5403,0.3089
+Crop Science,gpt-4o,206,0.5712,0.5874,0.3019
+Crop Science,qwq-plus,211,0.5482,0.6540,0.4391
+English,EduBenchEvaluator,175,0.2648,0.7886,0.6982
+English,deepseek-r1,175,0.4686,0.6229,0.4003
+English,deepseek-v3,175,0.5524,0.5771,0.2608
+English,gpt-4o,170,0.5176,0.5588,0.2166
+English,qwq-plus,174,0.5862,0.5747,0.2009
+General Pedagogy,EduBenchEvaluator,181,0.4365,0.6740,0.5462
+General Pedagogy,deepseek-r1,181,0.5856,0.5249,0.3624
+General Pedagogy,deepseek-v3,181,0.5764,0.5856,0.4033
+General Pedagogy,gpt-4o,178,0.5955,0.5449,0.2214
+General Pedagogy,qwq-plus,174,0.5862,0.5575,0.2442
+Geography,EduBenchEvaluator,170,0.3882,0.6824,0.4537
+Geography,deepseek-r1,170,0.6412,0.5529,0.2630
+Geography,deepseek-v3,170,1.1137,0.4706,0.0700
+Geography,gpt-4o,166,0.5783,0.5843,0.2275
+Geography,qwq-plus,168,0.6111,0.5774,0.2719
+History,EduBenchEvaluator,368,0.4656,0.7255,0.4546
+History,deepseek-r1,368,0.6821,0.5326,0.2455
+History,deepseek-v3,368,0.7228,0.5353,0.1995
+History,gpt-4o,353,0.6110,0.5184,0.2930
+History,qwq-plus,360,0.6843,0.5750,0.2331
+Law,EduBenchEvaluator,141,0.4586,0.6454,0.4492
+Law,deepseek-r1,141,0.5343,0.6383,0.4042
+Law,deepseek-v3,141,0.5248,0.5816,0.3832
+Law,gpt-4o,140,0.5476,0.6143,0.4166
+Law,qwq-plus,141,0.5745,0.5887,0.3507
+Literature and Art,EduBenchEvaluator,287,0.3531,0.7561,0.5745
+Literature and Art,deepseek-r1,287,0.6469,0.5575,0.2065
+Literature and Art,deepseek-v3,287,0.8537,0.5192,0.0988
+Literature and Art,gpt-4o,284,0.7934,0.4930,0.0567
+Literature and Art,qwq-plus,283,0.7150,0.5618,0.2074
+Mathematics,EduBenchEvaluator,323,0.5738,0.6254,0.3674
+Mathematics,deepseek-r1,323,0.6398,0.5944,0.3810
+Mathematics,deepseek-v3,323,0.5263,0.6594,0.4861
+Mathematics,gpt-4o,315,0.5111,0.6349,0.4560
+Mathematics,qwq-plus,321,0.5950,0.6199,0.3859
+Military Science,EduBenchEvaluator,165,0.4606,0.6909,0.4690
+Military Science,deepseek-r1,165,0.5717,0.5879,0.3224
+Military Science,deepseek-v3,165,0.5717,0.5758,0.3307
+Military Science,gpt-4o,163,0.6033,0.5767,0.2915
+Military Science,qwq-plus,165,0.6404,0.5515,0.3002
+Physical Education,EduBenchEvaluator,145,0.4736,0.7034,0.3772
+Physical Education,deepseek-r1,145,0.4506,0.6897,0.4826
+Physical Education,deepseek-v3,145,0.4828,0.6828,0.3668
+Physical Education,gpt-4o,145,0.4552,0.6966,0.4284
+Physical Education,qwq-plus,145,0.5402,0.6414,0.3555
+Physics,EduBenchEvaluator,353,0.3333,0.7592,0.5980
+Physics,deepseek-r1,353,0.5779,0.5779,0.2675
+Physics,deepseek-v3,353,0.5515,0.5977,0.2729
+Physics,gpt-4o,346,0.5597,0.5896,0.1750
+Physics,qwq-plus,344,0.5155,0.6424,0.3078
+Psychology,EduBenchEvaluator,274,0.4769,0.6898,0.3805
+Psychology,deepseek-r1,274,0.6302,0.5730,0.2780
+Psychology,deepseek-v3,274,0.6277,0.6277,0.3959
+Psychology,gpt-4o,269,0.5378,0.6245,0.3619
+Psychology,qwq-plus,266,0.5363,0.6015,0.3908
+Public Administration,EduBenchEvaluator,275,0.3042,0.7564,0.5558
+Public Administration,deepseek-r1,275,0.5018,0.5455,0.3182
+Public Administration,deepseek-v3,275,0.4800,0.5564,0.2190
+Public Administration,gpt-4o,273,0.4493,0.5604,0.2900
+Public Administration,qwq-plus,271,0.4723,0.5720,0.2739
+Sociology,EduBenchEvaluator,85,0.6549,0.5529,0.2188
+Sociology,deepseek-r1,85,0.4745,0.6235,0.6431
+Sociology,deepseek-v3,79,0.6203,0.6709,0.5815
+Sociology,gpt-4o,78,0.4487,0.6667,0.5484
+Sociology,qwq-plus,85,0.5255,0.6118,0.5604
+Theoretical Economics,EduBenchEvaluator,211,0.5166,0.6682,0.3358
+Theoretical Economics,deepseek-r1,211,0.6303,0.5545,0.2858
+Theoretical Economics,deepseek-v3,211,0.5671,0.6161,0.4470
+Theoretical Economics,gpt-4o,198,0.5152,0.5808,0.3528
+Theoretical Economics,qwq-plus,200,0.5633,0.6150,0.3600

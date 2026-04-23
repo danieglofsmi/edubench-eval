@@ -1,0 +1,10 @@
+task,Basic Factual Accuracy,Clarity, Simplicity & Inspiration,Content Relevance & Scope Control,Domain Knowledge Accuracy,Error Identification & Correction Precision,Higher-Order Thinking & Skill Development,Instruction Following & Task Completion,Motivation, Guidance & Positive Feedback,Personalization, Adaptation & Learning Support,Reasoning Process Rigor,Role & Tone Consistency,Scenario Element Integration
+automatic_grading,22,0,22,0,22,0,22,22,0,22,0,0
+error_correction,22,22,0,0,22,0,22,22,0,22,0,22
+idea_provision,22,22,22,22,0,22,22,0,0,22,0,22
+personalized_content_creation,0,0,0,0,0,0,22,0,22,0,0,22
+personalized_learning_support,0,0,22,0,0,22,22,0,22,0,0,22
+problem_solving,23,0,23,0,0,0,23,0,0,23,0,0
+psychological_support,0,0,0,0,0,0,21,21,21,0,21,21
+question_generation,22,22,22,22,0,22,22,0,0,0,0,0
+teaching_material_generation,22,22,22,22,0,22,22,0,0,0,22,0

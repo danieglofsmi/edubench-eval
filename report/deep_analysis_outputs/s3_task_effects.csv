@@ -1,0 +1,10 @@
+task,effect,mean,ci_lo,ci_hi,boot_std
+psychological_support,0.0931,4.4092,4.3047,4.523,0.0579
+teaching_material_generation,0.089,4.4052,4.3575,4.4579,0.0261
+idea_provision,0.0878,4.404,4.315,4.4951,0.0467
+question_generation,0.0732,4.3894,4.3231,4.4571,0.0336
+error_correction,0.0469,4.3631,4.2301,4.5267,0.0881
+personalized_content_creation,0.003,4.3192,4.2479,4.3896,0.0369
+personalized_learning_support,-0.0542,4.262,4.1681,4.3546,0.0477
+automatic_grading,-0.2164,4.0998,3.9656,4.2335,0.0694
+problem_solving,-0.2584,4.0578,3.9274,4.181,0.0661

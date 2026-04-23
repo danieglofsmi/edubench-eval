@@ -1,0 +1,31 @@
+education_level,evaluator,n,mae,exact_match_rate,kendall_tau
+Elementary School,EduBenchEvaluator,474,0.3769,0.7257,0.5394
+Elementary School,deepseek-r1,474,0.5183,0.5928,0.2957
+Elementary School,deepseek-v3,474,0.5155,0.5865,0.3250
+Elementary School,gpt-4o,469,0.4947,0.5906,0.3343
+Elementary School,qwq-plus,468,0.5499,0.5855,0.2504
+Middle School,EduBenchEvaluator,294,0.5624,0.6259,0.3592
+Middle School,deepseek-r1,294,0.6757,0.5374,0.3345
+Middle School,deepseek-v3,294,0.7143,0.5578,0.3494
+Middle School,gpt-4o,290,0.6977,0.5000,0.2870
+Middle School,qwq-plus,288,0.6470,0.5972,0.3991
+High School,EduBenchEvaluator,451,0.3082,0.7672,0.5766
+High School,deepseek-r1,451,0.5639,0.5965,0.3473
+High School,deepseek-v3,451,0.6061,0.6075,0.3179
+High School,gpt-4o,434,0.4478,0.6129,0.2749
+High School,qwq-plus,439,0.4951,0.6173,0.2964
+Undergraduate,EduBenchEvaluator,1575,0.5086,0.6781,0.4486
+Undergraduate,deepseek-r1,1575,0.6743,0.5689,0.3106
+Undergraduate,deepseek-v3,1569,0.7249,0.5583,0.2915
+Undergraduate,gpt-4o,1529,0.6861,0.5605,0.2703
+Undergraduate,qwq-plus,1545,0.7081,0.5748,0.2866
+Master,EduBenchEvaluator,1583,0.4100,0.7151,0.5081
+Master,deepseek-r1,1583,0.5801,0.5527,0.3071
+Master,deepseek-v3,1583,0.5656,0.5843,0.3097
+Master,gpt-4o,1551,0.5596,0.5629,0.2506
+Master,qwq-plus,1554,0.5549,0.5714,0.3002
+PhD,EduBenchEvaluator,1159,0.4590,0.7179,0.4467
+PhD,deepseek-r1,1159,0.5764,0.5815,0.3314
+PhD,deepseek-v3,1157,0.5938,0.5972,0.3036
+PhD,gpt-4o,1124,0.5605,0.5899,0.2890
+PhD,qwq-plus,1152,0.5877,0.6059,0.2913

@@ -1,0 +1,61 @@
+metric,model,n,mean,std
+Basic Factual Accuracy,deepseek-r1,132,4.7828,0.5025
+Basic Factual Accuracy,deepseek-v3,132,4.7298,0.5192
+Basic Factual Accuracy,qwen-max,132,4.7273,0.5394
+Basic Factual Accuracy,qwen2.5-14b-instruct,132,4.6995,0.5204
+Basic Factual Accuracy,qwen2.5-7b-instruct,132,4.6136,0.6888
+"Clarity, Simplicity & Inspiration",deepseek-r1,87,4.6245,0.4947
+"Clarity, Simplicity & Inspiration",deepseek-v3,85,4.2784,0.6196
+"Clarity, Simplicity & Inspiration",qwen-max,87,4.4330,0.4955
+"Clarity, Simplicity & Inspiration",qwen2.5-14b-instruct,86,4.1434,0.4418
+"Clarity, Simplicity & Inspiration",qwen2.5-7b-instruct,87,4.1916,0.5597
+Content Relevance & Scope Control,deepseek-r1,132,4.8106,0.3982
+Content Relevance & Scope Control,deepseek-v3,132,4.6338,0.5023
+Content Relevance & Scope Control,qwen-max,132,4.6439,0.4573
+Content Relevance & Scope Control,qwen2.5-14b-instruct,132,4.5328,0.5332
+Content Relevance & Scope Control,qwen2.5-7b-instruct,132,4.4343,0.6902
+Domain Knowledge Accuracy,deepseek-r1,66,4.8030,0.3714
+Domain Knowledge Accuracy,deepseek-v3,65,4.2974,0.5135
+Domain Knowledge Accuracy,qwen-max,65,4.4923,0.4608
+Domain Knowledge Accuracy,qwen2.5-14b-instruct,65,4.2103,0.4359
+Domain Knowledge Accuracy,qwen2.5-7b-instruct,66,4.2778,0.4805
+Error Identification & Correction Precision,deepseek-r1,44,4.6591,0.7993
+Error Identification & Correction Precision,deepseek-v3,41,4.3415,0.9945
+Error Identification & Correction Precision,qwen-max,41,4.3577,0.9236
+Error Identification & Correction Precision,qwen2.5-14b-instruct,40,4.2333,0.8825
+Error Identification & Correction Precision,qwen2.5-7b-instruct,41,4.0325,1.1424
+Higher-Order Thinking & Skill Development,deepseek-r1,88,4.3902,0.7901
+Higher-Order Thinking & Skill Development,deepseek-v3,84,3.6389,0.7368
+Higher-Order Thinking & Skill Development,qwen-max,86,4.0388,0.6790
+Higher-Order Thinking & Skill Development,qwen2.5-14b-instruct,85,3.5725,0.5776
+Higher-Order Thinking & Skill Development,qwen2.5-7b-instruct,85,3.6627,0.7488
+Instruction Following & Task Completion,deepseek-r1,198,4.7290,0.4913
+Instruction Following & Task Completion,deepseek-v3,198,4.4394,0.5184
+Instruction Following & Task Completion,qwen-max,198,4.5067,0.5663
+Instruction Following & Task Completion,qwen2.5-14b-instruct,198,4.2744,0.5855
+Instruction Following & Task Completion,qwen2.5-7b-instruct,198,4.2138,0.6961
+"Motivation, Guidance & Positive Feedback",deepseek-r1,65,4.2872,0.9018
+"Motivation, Guidance & Positive Feedback",deepseek-v3,62,4.0000,0.7783
+"Motivation, Guidance & Positive Feedback",qwen-max,64,4.0104,0.8143
+"Motivation, Guidance & Positive Feedback",qwen2.5-14b-instruct,61,3.6503,0.7378
+"Motivation, Guidance & Positive Feedback",qwen2.5-7b-instruct,63,3.7672,0.7504
+"Personalization, Adaptation & Learning Support",deepseek-r1,66,4.8737,0.3613
+"Personalization, Adaptation & Learning Support",deepseek-v3,65,4.0410,0.5949
+"Personalization, Adaptation & Learning Support",qwen-max,66,4.3384,0.5459
+"Personalization, Adaptation & Learning Support",qwen2.5-14b-instruct,66,3.7576,0.6527
+"Personalization, Adaptation & Learning Support",qwen2.5-7b-instruct,66,4.0152,0.6125
+Reasoning Process Rigor,deepseek-r1,87,4.0307,1.4336
+Reasoning Process Rigor,deepseek-v3,84,3.7262,1.4237
+Reasoning Process Rigor,qwen-max,85,3.9451,1.2699
+Reasoning Process Rigor,qwen2.5-14b-instruct,80,3.6750,1.2360
+Reasoning Process Rigor,qwen2.5-7b-instruct,85,3.5059,1.4440
+Role & Tone Consistency,deepseek-r1,44,4.8182,0.2185
+Role & Tone Consistency,deepseek-v3,44,4.3030,0.3815
+Role & Tone Consistency,qwen-max,44,4.4773,0.3287
+Role & Tone Consistency,qwen2.5-14b-instruct,44,4.1591,0.4687
+Role & Tone Consistency,qwen2.5-7b-instruct,44,4.3333,0.3761
+Scenario Element Integration,deepseek-r1,110,4.6970,0.6705
+Scenario Element Integration,deepseek-v3,108,4.0833,0.6761
+Scenario Element Integration,qwen-max,110,4.2697,0.6794
+Scenario Element Integration,qwen2.5-14b-instruct,110,3.8606,0.6153
+Scenario Element Integration,qwen2.5-7b-instruct,109,4.0734,0.6423

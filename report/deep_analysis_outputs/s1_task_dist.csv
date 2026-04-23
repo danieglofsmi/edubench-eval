@@ -1,0 +1,10 @@
+task,n,n_questions,n_metrics,n_models,pct
+idea_provision,863,22,16,5,15.59
+teaching_material_generation,770,22,14,5,13.91
+error_correction,750,22,14,5,13.55
+question_generation,660,22,12,5,11.92
+automatic_grading,628,22,12,5,11.34
+psychological_support,549,21,10,5,9.92
+personalized_learning_support,542,22,10,5,9.79
+problem_solving,444,23,8,5,8.02
+personalized_content_creation,330,22,6,5,5.96

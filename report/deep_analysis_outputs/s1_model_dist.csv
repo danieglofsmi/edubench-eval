@@ -1,0 +1,6 @@
+model,n,pct
+deepseek-r1,1119,20.21
+deepseek-v3,1100,19.87
+qwen-max,1110,20.05
+qwen2.5-14b-instruct,1099,19.85
+qwen2.5-7b-instruct,1108,20.01

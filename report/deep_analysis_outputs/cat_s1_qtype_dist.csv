@@ -1,0 +1,10 @@
+question_type,count,human_mean,tasks
+helper,863,4.4040,1
+material,770,4.4052,1
+error_correct,750,4.3631,1
+question_gen,660,4.3894,1
+judge,632,4.1039,2
+mood,549,4.4092,1
+design,542,4.2620,1
+Q&A,440,4.0515,1
+student_profile,330,4.3192,1

@@ -1,0 +1,10 @@
+task,Elementary School,Middle School,High School,Undergraduate,Master,PhD
+automatic_grading,30,30,60,229,137,142
+error_correction,33,34,137,205,237,104
+idea_provision,112,40,120,236,236,119
+personalized_content_creation,60,30,30,90,30,90
+personalized_learning_support,25,0,24,196,198,99
+problem_solving,20,40,0,144,100,140
+psychological_support,99,25,50,125,150,100
+question_generation,60,60,30,210,180,120
+teaching_material_generation,35,35,0,140,315,245

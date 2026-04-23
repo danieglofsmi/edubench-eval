@@ -1,0 +1,13 @@
+metric,n,n_tasks,human_mean
+Basic Factual Accuracy,660,6,4.7106
+"Clarity, Simplicity & Inspiration",432,4,4.3349
+Content Relevance & Scope Control,660,6,4.6111
+Domain Knowledge Accuracy,327,3,4.4169
+Error Identification & Correction Precision,207,2,4.3301
+Higher-Order Thinking & Skill Development,428,4,3.8653
+Instruction Following & Task Completion,990,9,4.4327
+"Motivation, Guidance & Positive Feedback",315,3,3.9471
+"Personalization, Adaptation & Learning Support",329,3,4.2057
+Reasoning Process Rigor,421,4,3.7791
+Role & Tone Consistency,220,2,4.4182
+Scenario Element Integration,547,5,4.1974

@@ -1,0 +1,26 @@
+group,n,human_mean,model_spread,model_range,best_model,best_score,worst_model,worst_score
+General Pedagogy,181,4.3094,0.3267,0.9772,deepseek-r1,4.8198,qwen2.5-14b-instruct,3.8426
+Chinese,159,4.2474,0.3141,0.9062,deepseek-r1,4.7708,qwen2.5-7b-instruct,3.8646
+English,175,4.4229,0.3111,0.9534,deepseek-r1,4.9630,qwen2.5-14b-instruct,4.0095
+Automation,90,4.4185,0.3076,0.7963,qwen-max,4.7963,qwen2.5-7b-instruct,4.0000
+Clinical Medicine,133,4.2907,0.2608,0.7037,deepseek-r1,4.7778,qwen2.5-14b-instruct,4.0741
+Basic Medicine,309,4.1823,0.2605,0.7280,deepseek-r1,4.6222,qwen2.5-7b-instruct,3.8942
+Physical Education,145,4.4115,0.2471,0.6092,deepseek-r1,4.7011,deepseek-v3,4.0920
+Mathematics,323,4.2766,0.2348,0.7252,deepseek-r1,4.5846,qwen2.5-7b-instruct,3.8594
+Aquaculture,285,4.4269,0.2308,0.6634,deepseek-r1,4.8506,qwen2.5-14b-instruct,4.1871
+Computer Science,224,4.3616,0.2255,0.6000,deepseek-r1,4.6667,qwen2.5-7b-instruct,4.0667
+Chemistry,290,4.3966,0.2249,0.6610,deepseek-r1,4.8136,qwen2.5-14b-instruct,4.1525
+Theoretical Economics,211,4.3365,0.2200,0.6396,deepseek-r1,4.7209,qwen2.5-7b-instruct,4.0813
+Military Science,165,4.2828,0.2160,0.5556,deepseek-r1,4.5556,qwen2.5-7b-instruct,4.0000
+Physics,353,4.3739,0.2064,0.5663,deepseek-r1,4.6901,qwen2.5-14b-instruct,4.1238
+Biology,282,4.3050,0.2063,0.6264,deepseek-r1,4.5977,qwen2.5-14b-instruct,3.9713
+Public Administration,275,4.4764,0.2021,0.5655,deepseek-r1,4.7798,qwen2.5-7b-instruct,4.2143
+History,368,4.2437,0.2019,0.6283,deepseek-r1,4.5867,qwen2.5-14b-instruct,3.9583
+Applied Economics,145,4.3034,0.1840,0.5057,deepseek-r1,4.6437,qwen2.5-7b-instruct,4.1379
+Literature and Art,287,4.3995,0.1820,0.5216,deepseek-r1,4.7299,qwen2.5-14b-instruct,4.2083
+Psychology,274,4.3321,0.1785,0.4286,deepseek-r1,4.5212,deepseek-v3,4.0926
+Law,141,4.3121,0.1646,0.4368,deepseek-r1,4.5287,qwen2.5-14b-instruct,4.0920
+Sociology,85,4.3020,0.1439,0.3922,qwen-max,4.5686,deepseek-v3,4.1765
+Geography,170,4.3745,0.1342,0.3529,deepseek-r1,4.5882,deepseek-v3,4.2353
+Business Administration,255,3.9333,0.1036,0.2876,deepseek-r1,4.0915,deepseek-v3,3.8039
+Crop Science,211,4.2812,0.0829,0.2222,deepseek-v3,4.3968,qwen2.5-7b-instruct,4.1746

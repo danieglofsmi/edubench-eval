@@ -1,0 +1,61 @@
+metric,evaluator,n,mae,bias
+Basic Factual Accuracy,EduBenchEvaluator,660,0.2773,0.1045
+Basic Factual Accuracy,deepseek-r1,660,0.3707,0.0394
+Basic Factual Accuracy,deepseek-v3,659,0.3581,0.1588
+Basic Factual Accuracy,gpt-4o,660,0.2909,0.2303
+Basic Factual Accuracy,qwq-plus,658,0.3683,0.1150
+"Clarity, Simplicity & Inspiration",EduBenchEvaluator,432,0.4059,0.2855
+"Clarity, Simplicity & Inspiration",deepseek-r1,432,0.5941,0.0540
+"Clarity, Simplicity & Inspiration",deepseek-v3,432,0.5664,0.2207
+"Clarity, Simplicity & Inspiration",gpt-4o,425,0.5616,0.2588
+"Clarity, Simplicity & Inspiration",qwq-plus,421,0.5732,-0.0206
+Content Relevance & Scope Control,EduBenchEvaluator,660,0.3500,0.1449
+Content Relevance & Scope Control,deepseek-r1,660,0.3985,0.1965
+Content Relevance & Scope Control,deepseek-v3,659,0.4284,0.2221
+Content Relevance & Scope Control,gpt-4o,660,0.3899,0.3101
+Content Relevance & Scope Control,qwq-plus,658,0.3936,0.2761
+Domain Knowledge Accuracy,EduBenchEvaluator,327,0.3282,0.1978
+Domain Knowledge Accuracy,deepseek-r1,327,0.5678,0.3476
+Domain Knowledge Accuracy,deepseek-v3,327,0.5617,0.5311
+Domain Knowledge Accuracy,gpt-4o,327,0.5423,0.4057
+Domain Knowledge Accuracy,qwq-plus,324,0.5113,0.3632
+Error Identification & Correction Precision,EduBenchEvaluator,207,0.5250,0.4767
+Error Identification & Correction Precision,deepseek-r1,207,0.7037,0.2496
+Error Identification & Correction Precision,deepseek-v3,204,1.2729,-0.3611
+Error Identification & Correction Precision,gpt-4o,153,0.6253,0.1895
+Error Identification & Correction Precision,qwq-plus,189,0.6402,0.4744
+Higher-Order Thinking & Skill Development,EduBenchEvaluator,428,0.7002,0.6394
+Higher-Order Thinking & Skill Development,deepseek-r1,428,0.6776,0.0950
+Higher-Order Thinking & Skill Development,deepseek-v3,428,0.6558,0.4128
+Higher-Order Thinking & Skill Development,gpt-4o,414,0.7142,0.4372
+Higher-Order Thinking & Skill Development,qwq-plus,417,0.7218,0.0584
+Instruction Following & Task Completion,EduBenchEvaluator,990,0.3933,0.1098
+Instruction Following & Task Completion,deepseek-r1,990,0.5781,0.3148
+Instruction Following & Task Completion,deepseek-v3,989,0.5767,0.4344
+Instruction Following & Task Completion,gpt-4o,990,0.5559,0.4966
+Instruction Following & Task Completion,qwq-plus,988,0.5624,0.3343
+"Motivation, Guidance & Positive Feedback",EduBenchEvaluator,315,0.8233,0.7704
+"Motivation, Guidance & Positive Feedback",deepseek-r1,315,0.7661,-0.1185
+"Motivation, Guidance & Positive Feedback",deepseek-v3,314,0.8907,0.2304
+"Motivation, Guidance & Positive Feedback",gpt-4o,279,0.7228,0.5341
+"Motivation, Guidance & Positive Feedback",qwq-plus,297,0.7520,0.1706
+"Personalization, Adaptation & Learning Support",EduBenchEvaluator,329,0.3475,0.2442
+"Personalization, Adaptation & Learning Support",deepseek-r1,329,0.5816,0.4174
+"Personalization, Adaptation & Learning Support",deepseek-v3,329,0.6565,0.6241
+"Personalization, Adaptation & Learning Support",gpt-4o,309,0.7098,0.5739
+"Personalization, Adaptation & Learning Support",qwq-plus,314,0.6274,0.5467
+Reasoning Process Rigor,EduBenchEvaluator,421,0.7047,0.5986
+Reasoning Process Rigor,deepseek-r1,421,1.0768,0.7411
+Reasoning Process Rigor,deepseek-v3,420,1.1127,0.7778
+Reasoning Process Rigor,gpt-4o,414,1.1055,0.8945
+Reasoning Process Rigor,qwq-plus,415,1.1261,0.8932
+Role & Tone Consistency,EduBenchEvaluator,220,0.2879,0.0545
+Role & Tone Consistency,deepseek-r1,220,0.5258,0.4864
+Role & Tone Consistency,deepseek-v3,220,0.5152,0.4909
+Role & Tone Consistency,gpt-4o,220,0.5333,0.4818
+Role & Tone Consistency,qwq-plus,220,0.5364,0.4909
+Scenario Element Integration,EduBenchEvaluator,547,0.4333,0.3090
+Scenario Element Integration,deepseek-r1,547,0.7081,0.4424
+Scenario Element Integration,deepseek-v3,547,0.5734,0.3053
+Scenario Element Integration,gpt-4o,546,0.6825,0.4103
+Scenario Element Integration,qwq-plus,545,0.7388,0.6153

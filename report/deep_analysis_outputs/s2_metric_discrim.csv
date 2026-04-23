@@ -1,0 +1,13 @@
+metric,n,human_mean,model_spread,model_range
+"Personalization, Adaptation & Learning Support",329,4.2057,0.3816,1.1162
+Higher-Order Thinking & Skill Development,428,3.8653,0.3109,0.8176
+Scenario Element Integration,547,4.1974,0.2816,0.8364
+Role & Tone Consistency,220,4.4182,0.2241,0.6591
+"Motivation, Guidance & Positive Feedback",315,3.9471,0.2204,0.6369
+Domain Knowledge Accuracy,327,4.4169,0.2150,0.5928
+Error Identification & Correction Precision,207,4.3301,0.2034,0.6266
+Reasoning Process Rigor,421,3.7791,0.1893,0.5248
+Instruction Following & Task Completion,990,4.4327,0.1824,0.5152
+"Clarity, Simplicity & Inspiration",432,4.3349,0.1754,0.4811
+Content Relevance & Scope Control,660,4.6111,0.1255,0.3763
+Basic Factual Accuracy,660,4.7106,0.0555,0.1692

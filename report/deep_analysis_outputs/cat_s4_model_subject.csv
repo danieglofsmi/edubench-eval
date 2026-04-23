@@ -1,0 +1,126 @@
+model,subject,n,human_mean,std
+deepseek-r1,Applied Economics,29,4.6437,0.7577
+deepseek-r1,Aquaculture,58,4.8506,0.2848
+deepseek-r1,Automation,18,4.7037,0.5972
+deepseek-r1,Basic Medicine,60,4.6222,0.7365
+deepseek-r1,Biology,58,4.5977,0.7159
+deepseek-r1,Business Administration,51,4.0915,1.0908
+deepseek-r1,Chemistry,59,4.8136,0.2318
+deepseek-r1,Chinese,32,4.7708,0.4365
+deepseek-r1,Clinical Medicine,27,4.7778,0.7644
+deepseek-r1,Computer Science,45,4.6667,0.7762
+deepseek-r1,Crop Science,44,4.3409,1.1688
+deepseek-r1,English,36,4.9630,0.1048
+deepseek-r1,General Pedagogy,37,4.8198,0.2857
+deepseek-r1,Geography,34,4.5882,0.7412
+deepseek-r1,History,75,4.5867,0.8324
+deepseek-r1,Law,29,4.5287,0.9408
+deepseek-r1,Literature and Art,58,4.7299,0.5688
+deepseek-r1,Mathematics,65,4.5846,0.7780
+deepseek-r1,Military Science,33,4.5556,0.6599
+deepseek-r1,Physical Education,29,4.7011,0.4822
+deepseek-r1,Physics,71,4.6901,0.5317
+deepseek-r1,Psychology,55,4.5212,0.8687
+deepseek-r1,Public Administration,56,4.7798,0.4239
+deepseek-r1,Sociology,17,4.3137,0.7794
+deepseek-r1,Theoretical Economics,43,4.7209,0.4543
+deepseek-v3,Applied Economics,29,4.2184,0.7745
+deepseek-v3,Aquaculture,54,4.3272,0.5755
+deepseek-v3,Automation,18,4.1481,0.8973
+deepseek-v3,Basic Medicine,63,4.1270,0.8838
+deepseek-v3,Biology,54,4.2840,0.6832
+deepseek-v3,Business Administration,51,3.8039,1.0378
+deepseek-v3,Chemistry,56,4.3929,0.6143
+deepseek-v3,Chinese,32,4.3542,0.5830
+deepseek-v3,Clinical Medicine,26,4.1795,0.8125
+deepseek-v3,Computer Science,45,4.4074,0.9051
+deepseek-v3,Crop Science,42,4.3968,0.7024
+deepseek-v3,English,35,4.4286,0.5610
+deepseek-v3,General Pedagogy,36,4.3241,0.8108
+deepseek-v3,Geography,34,4.2353,0.8690
+deepseek-v3,History,73,4.2283,0.8808
+deepseek-v3,Law,29,4.2414,0.8793
+deepseek-v3,Literature and Art,57,4.4035,0.4577
+deepseek-v3,Mathematics,64,4.2760,0.8510
+deepseek-v3,Military Science,33,4.3636,0.5588
+deepseek-v3,Physical Education,29,4.0920,0.9383
+deepseek-v3,Physics,71,4.2582,0.7836
+deepseek-v3,Psychology,54,4.0926,0.8325
+deepseek-v3,Public Administration,55,4.4848,0.5607
+deepseek-v3,Sociology,17,4.1765,0.7331
+deepseek-v3,Theoretical Economics,43,4.3721,0.5937
+qwen-max,Applied Economics,29,4.3448,0.7755
+qwen-max,Aquaculture,58,4.4655,0.5026
+qwen-max,Automation,18,4.7963,0.1625
+qwen-max,Basic Medicine,63,4.3069,0.8321
+qwen-max,Biology,54,4.4198,0.5851
+qwen-max,Business Administration,51,3.9085,1.0563
+qwen-max,Chemistry,59,4.3559,0.6691
+qwen-max,Chinese,32,4.2396,0.8508
+qwen-max,Clinical Medicine,26,4.3333,0.8963
+qwen-max,Computer Science,45,4.5185,0.8565
+qwen-max,Crop Science,42,4.2857,0.7438
+qwen-max,English,34,4.4216,0.5069
+qwen-max,General Pedagogy,36,4.4352,0.3914
+qwen-max,Geography,34,4.4706,0.7053
+qwen-max,History,73,4.2557,0.8449
+qwen-max,Law,29,4.4713,0.3867
+qwen-max,Literature and Art,58,4.3908,0.5109
+qwen-max,Mathematics,65,4.3538,0.9444
+qwen-max,Military Science,33,4.4343,0.6691
+qwen-max,Physical Education,29,4.7011,0.4138
+qwen-max,Physics,71,4.5305,0.4633
+qwen-max,Psychology,55,4.4364,0.6126
+qwen-max,Public Administration,56,4.5893,0.4797
+qwen-max,Sociology,17,4.5686,0.4393
+qwen-max,Theoretical Economics,43,4.3178,0.7151
+qwen2.5-14b-instruct,Applied Economics,29,4.1724,0.7408
+qwen2.5-14b-instruct,Aquaculture,57,4.1871,0.5585
+qwen2.5-14b-instruct,Automation,18,4.4444,0.3685
+qwen2.5-14b-instruct,Basic Medicine,60,3.9722,0.7918
+qwen2.5-14b-instruct,Biology,58,3.9713,0.7253
+qwen2.5-14b-instruct,Business Administration,51,3.8562,1.0146
+qwen2.5-14b-instruct,Chemistry,59,4.1525,0.6238
+qwen2.5-14b-instruct,Chinese,31,4.0000,0.4789
+qwen2.5-14b-instruct,Clinical Medicine,27,4.0741,0.8996
+qwen2.5-14b-instruct,Computer Science,44,4.1439,0.9140
+qwen2.5-14b-instruct,Crop Science,41,4.2033,0.8027
+qwen2.5-14b-instruct,English,35,4.0095,0.8184
+qwen2.5-14b-instruct,General Pedagogy,36,3.8426,0.7876
+qwen2.5-14b-instruct,Geography,34,4.3137,0.7877
+qwen2.5-14b-instruct,History,72,3.9583,0.8258
+qwen2.5-14b-instruct,Law,29,4.0920,0.9424
+qwen2.5-14b-instruct,Literature and Art,56,4.2083,0.7253
+qwen2.5-14b-instruct,Mathematics,65,4.3026,0.7058
+qwen2.5-14b-instruct,Military Science,33,4.0606,0.5771
+qwen2.5-14b-instruct,Physical Education,29,4.2529,0.5582
+qwen2.5-14b-instruct,Physics,70,4.1238,0.6835
+qwen2.5-14b-instruct,Psychology,55,4.4667,0.4000
+qwen2.5-14b-instruct,Public Administration,52,4.3013,0.4947
+qwen2.5-14b-instruct,Sociology,17,4.1765,0.7764
+qwen2.5-14b-instruct,Theoretical Economics,41,4.1707,0.7142
+qwen2.5-7b-instruct,Applied Economics,29,4.1379,0.8328
+qwen2.5-7b-instruct,Aquaculture,58,4.2931,0.6161
+qwen2.5-7b-instruct,Automation,18,4.0000,0.8958
+qwen2.5-7b-instruct,Basic Medicine,63,3.8942,1.1219
+qwen2.5-7b-instruct,Biology,58,4.2586,0.6191
+qwen2.5-7b-instruct,Business Administration,51,4.0065,1.0510
+qwen2.5-7b-instruct,Chemistry,57,4.2632,0.6421
+qwen2.5-7b-instruct,Chinese,32,3.8646,0.9199
+qwen2.5-7b-instruct,Clinical Medicine,27,4.0864,0.8962
+qwen2.5-7b-instruct,Computer Science,45,4.0667,1.0414
+qwen2.5-7b-instruct,Crop Science,42,4.1746,0.7426
+qwen2.5-7b-instruct,English,35,4.2762,0.6349
+qwen2.5-7b-instruct,General Pedagogy,36,4.1111,0.5827
+qwen2.5-7b-instruct,Geography,34,4.2647,0.8315
+qwen2.5-7b-instruct,History,75,4.1778,0.8080
+qwen2.5-7b-instruct,Law,25,4.2133,0.9280
+qwen2.5-7b-instruct,Literature and Art,58,4.2586,0.6610
+qwen2.5-7b-instruct,Mathematics,64,3.8594,1.1021
+qwen2.5-7b-instruct,Military Science,33,4.0000,0.7201
+qwen2.5-7b-instruct,Physical Education,29,4.3103,0.8663
+qwen2.5-7b-instruct,Physics,70,4.2619,0.6688
+qwen2.5-7b-instruct,Psychology,55,4.1394,0.7725
+qwen2.5-7b-instruct,Public Administration,56,4.2143,0.4856
+qwen2.5-7b-instruct,Sociology,17,4.2745,0.7774
+qwen2.5-7b-instruct,Theoretical Economics,41,4.0813,0.9010

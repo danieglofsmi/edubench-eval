@@ -1,0 +1,6 @@
+evaluator,kendall_tau_vs_human_mean,p_value
+EduBenchEvaluator,0.475,0.0
+deepseek-r1,0.3144,0.0
+deepseek-v3,0.3036,0.0
+gpt-4o,0.2758,0.0
+qwq-plus,0.2955,0.0

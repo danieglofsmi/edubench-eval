@@ -1,0 +1,10 @@
+task,n,human_mean,human_std,model_spread,model_range,best_model,worst_model,best_score,worst_score
+personalized_content_creation,330,4.3192,0.5633,0.4424,1.0152,deepseek-r1,deepseek-v3,4.9545,3.9394
+personalized_learning_support,542,4.262,0.6259,0.3709,0.9564,deepseek-r1,qwen2.5-14b-instruct,4.8545,3.8981
+psychological_support,549,4.4092,0.5995,0.2976,0.8212,deepseek-r1,qwen2.5-14b-instruct,4.8545,4.0333
+automatic_grading,628,4.0998,0.9056,0.2627,0.7186,deepseek-r1,qwen2.5-7b-instruct,4.4091,3.6905
+teaching_material_generation,770,4.4052,0.473,0.2146,0.5368,deepseek-r1,qwen2.5-14b-instruct,4.7532,4.2165
+question_generation,660,4.3894,0.7053,0.205,0.5051,deepseek-r1,qwen2.5-7b-instruct,4.6389,4.1338
+problem_solving,444,4.0578,1.4051,0.192,0.4697,qwen-max,qwen2.5-7b-instruct,4.2197,3.75
+idea_provision,863,4.404,0.6897,0.1904,0.5232,deepseek-r1,qwen2.5-14b-instruct,4.6686,4.1453
+error_correction,750,4.3631,0.7917,0.1564,0.4156,deepseek-r1,qwen2.5-14b-instruct,4.6071,4.1914

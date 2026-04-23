@@ -1,0 +1,51 @@
+subject,model,n,human_mean
+History,deepseek-r1,75,4.5867
+History,deepseek-v3,73,4.2283
+History,qwen-max,73,4.2557
+History,qwen2.5-14b-instruct,72,3.9583
+History,qwen2.5-7b-instruct,75,4.1778
+Physics,deepseek-r1,71,4.6901
+Physics,deepseek-v3,71,4.2582
+Physics,qwen-max,71,4.5305
+Physics,qwen2.5-14b-instruct,70,4.1238
+Physics,qwen2.5-7b-instruct,70,4.2619
+Mathematics,deepseek-r1,65,4.5846
+Mathematics,deepseek-v3,64,4.2760
+Mathematics,qwen-max,65,4.3538
+Mathematics,qwen2.5-14b-instruct,65,4.3026
+Mathematics,qwen2.5-7b-instruct,64,3.8594
+Basic Medicine,deepseek-r1,60,4.6222
+Basic Medicine,deepseek-v3,63,4.1270
+Basic Medicine,qwen-max,63,4.3069
+Basic Medicine,qwen2.5-14b-instruct,60,3.9722
+Basic Medicine,qwen2.5-7b-instruct,63,3.8942
+Chemistry,deepseek-r1,59,4.8136
+Chemistry,deepseek-v3,56,4.3929
+Chemistry,qwen-max,59,4.3559
+Chemistry,qwen2.5-14b-instruct,59,4.1525
+Chemistry,qwen2.5-7b-instruct,57,4.2632
+Literature and Art,deepseek-r1,58,4.7299
+Literature and Art,deepseek-v3,57,4.4035
+Literature and Art,qwen-max,58,4.3908
+Literature and Art,qwen2.5-14b-instruct,56,4.2083
+Literature and Art,qwen2.5-7b-instruct,58,4.2586
+Aquaculture,deepseek-r1,58,4.8506
+Aquaculture,deepseek-v3,54,4.3272
+Aquaculture,qwen-max,58,4.4655
+Aquaculture,qwen2.5-14b-instruct,57,4.1871
+Aquaculture,qwen2.5-7b-instruct,58,4.2931
+Biology,deepseek-r1,58,4.5977
+Biology,deepseek-v3,54,4.2840
+Biology,qwen-max,54,4.4198
+Biology,qwen2.5-14b-instruct,58,3.9713
+Biology,qwen2.5-7b-instruct,58,4.2586
+Public Administration,deepseek-r1,56,4.7798
+Public Administration,deepseek-v3,55,4.4848
+Public Administration,qwen-max,56,4.5893
+Public Administration,qwen2.5-14b-instruct,52,4.3013
+Public Administration,qwen2.5-7b-instruct,56,4.2143
+Psychology,deepseek-r1,55,4.5212
+Psychology,deepseek-v3,54,4.0926
+Psychology,qwen-max,55,4.4364
+Psychology,qwen2.5-14b-instruct,55,4.4667
+Psychology,qwen2.5-7b-instruct,55,4.1394

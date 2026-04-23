@@ -1,0 +1,7 @@
+field,non_null,coverage_pct,unique_values
+language,5536,100.0,2
+subject_unified,5536,100.0,25
+education_level_unified,5536,100.0,6
+question_type_EN,5536,100.0,9
+knowledge_point,1430,25.8,43
+anxiety_level,549,9.9,7

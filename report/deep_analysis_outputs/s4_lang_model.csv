@@ -1,0 +1,11 @@
+language,model,n,mean,std
+en,deepseek-r1,558,4.5472,0.7679
+en,deepseek-v3,556,4.298,0.8227
+en,qwen-max,557,4.4423,0.7777
+en,qwen2.5-14b-instruct,553,4.3002,0.7267
+en,qwen2.5-7b-instruct,557,4.2747,0.8173
+zh,deepseek-r1,561,4.7338,0.6412
+zh,deepseek-v3,544,4.239,0.73
+zh,qwen-max,553,4.3466,0.6328
+zh,qwen2.5-14b-instruct,546,3.9603,0.7229
+zh,qwen2.5-7b-instruct,551,4.0042,0.822

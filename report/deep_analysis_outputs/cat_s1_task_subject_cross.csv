@@ -1,0 +1,10 @@
+task,History,Physics,Mathematics,Basic Medicine,Chemistry,Literature and Art,Aquaculture,Biology,Public Administration,Psychology,Business Administration,Computer Science,Theoretical Economics,Crop Science,General Pedagogy
+automatic_grading,54,0,60,58,56,24,0,30,0,30,30,29,86,22,29
+error_correction,69,70,0,31,70,34,65,0,69,0,35,70,0,34,68
+idea_provision,80,0,80,80,40,40,0,32,76,39,80,0,0,40,0
+personalized_content_creation,45,45,15,0,15,15,15,15,15,0,15,0,15,0,0
+personalized_learning_support,25,48,23,0,25,0,50,50,50,0,25,25,25,0,49
+problem_solving,40,40,20,0,0,24,0,40,0,40,20,40,20,20,0
+psychological_support,25,50,0,50,49,50,25,50,0,0,50,25,0,25,0
+question_generation,30,30,90,90,0,30,60,30,30,60,0,0,30,0,0
+teaching_material_generation,0,70,35,0,35,70,70,35,35,105,0,35,35,70,35

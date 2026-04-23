@@ -1,0 +1,31 @@
+education_level,model,n,human_mean
+Elementary School,deepseek-r1,97,4.7388
+Elementary School,deepseek-v3,92,4.3949
+Elementary School,qwen-max,92,4.5072
+Elementary School,qwen2.5-14b-instruct,96,4.0694
+Elementary School,qwen2.5-7b-instruct,97,4.2852
+Middle School,deepseek-r1,59,4.5537
+Middle School,deepseek-v3,59,4.0508
+Middle School,qwen-max,59,4.1864
+Middle School,qwen2.5-14b-instruct,58,4.1782
+Middle School,qwen2.5-7b-instruct,59,3.9322
+High School,deepseek-r1,91,4.8425
+High School,deepseek-v3,90,4.5037
+High School,qwen-max,90,4.5889
+High School,qwen2.5-14b-instruct,90,4.1963
+High School,qwen2.5-7b-instruct,90,4.3593
+Undergraduate,deepseek-r1,316,4.5148
+Undergraduate,deepseek-v3,316,4.2089
+Undergraduate,qwen-max,317,4.3049
+Undergraduate,qwen2.5-14b-instruct,310,4.0118
+Undergraduate,qwen2.5-7b-instruct,316,4.1319
+Master,deepseek-r1,322,4.7112
+Master,deepseek-v3,314,4.2601
+Master,qwen-max,320,4.4448
+Master,qwen2.5-14b-instruct,313,4.1949
+Master,qwen2.5-7b-instruct,314,4.0998
+PhD,deepseek-r1,234,4.6168
+PhD,deepseek-v3,229,4.2766
+PhD,qwen-max,232,4.3807
+PhD,qwen2.5-14b-instruct,232,4.1940
+PhD,qwen2.5-7b-instruct,232,4.1135
