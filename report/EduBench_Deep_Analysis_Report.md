@@ -1,9 +1,14 @@
 # EduBench 深度分析报告
 
 > 数据来源：`results_merge_enriched.jsonl`（5536 条记录，含分类标签增强）  
+> 测试集：`results_test.jsonl`（2218 条记录，基于 (question, answer, metric) 三元组精确匹配 test.json）  
+> 训练集：`results_train.jsonl`（3318 条记录，JSONL 中未出现在 test.json 的回答）  
 > 分析日期：2025-04  
-> 分析脚本：`edubench_comprehensive_analysis.py`（基础分析）、`category_analysis.py`（分类维度分析）  
+> 分析脚本：`edubench_comprehensive_analysis.py`（基础分析）、`category_analysis.py`（分类维度分析）、`recompute_s5_v2.py`（测试集评估器分析）  
+> 拆分脚本：`split_train_test_v4.py`（三级匹配：精确→空白归一化→仅保留字母数字/CJK）  
 > 产物目录：`deep_analysis_outputs/`
+> 
+> **重要说明**：EduBenchEvaluator 的训练过程使用了 JSONL 数据的一部分，因此第五节"自动评估能力分析"全部基于测试集（2218 条）进行，以确保评估器对比的公平性。测试集的拆分严格基于 (question, answer, metric) 三元组匹配——只有当 JSONL 中某条记录的题目、回答、评估维度三者同时出现在 test.json 中，才被归入测试集。test.json 中有 601 条记录的回答在 JSONL 中不存在（覆盖 245 个唯一问题），已单独导出至 `test_unmatched_in_jsonl.json`。第一至四节的数据分布和生成模型分析仍基于全量 5536 条数据。
 
 ---
 
@@ -676,59 +681,59 @@ qwen2.5-14b 和 qwen2.5-7b 在不同学制中的排名频繁互换：在 Element
 
 ## 五、自动评估能力分析
 
-本节以人类均值为参照，从偏差、一致性、校准和分档准确率等多维度系统评价每个自动评估器的能力。
+> **本节全部分析基于测试集（2218 条记录，8 个任务），排除了 EduBenchEvaluator 训练过程中使用的数据。** 测试集的拆分严格基于 (question, answer, metric) 三元组匹配 test.json，确保 EduBenchEvaluator 与其他评估器在完全相同的、未被 EduBenchEvaluator "见过"的数据上进行评价。由于匹配粒度从之前的 (question, metric) 细化到了 (question, answer, metric)，测试集从 4487 条缩减至 2218 条，训练集从 1049 条扩展至 3318 条。
 
 ### 5.1 评估器综合排名
 
-| 评估器 | MAE↓ | Signed Bias | Exact Match | Kendall's τ↑ | 分档一致率↑ |
-|--------|------|-------------|-------------|-------------|------------|
-| EduBenchEvaluator | **0.445** | +0.287 | **0.706** | **0.475** | **0.930** |
-| gpt-4o | 0.588 | +0.431 | 0.571 | 0.276 | 0.915 |
-| deepseek-r1 | 0.605 | +0.263 | 0.570 | 0.314 | 0.871 |
-| qwq-plus | 0.605 | +0.339 | 0.586 | 0.296 | 0.884 |
-| deepseek-v3 | 0.624 | +0.350 | 0.580 | 0.304 | 0.899 |
+| 评估器 | n | MAE↓ | Signed Bias | Exact Match↑ | Kendall's τ↑ | 分档一致率↑ |
+|--------|---|------|-------------|-------------|-------------|------------|
+| EduBenchEvaluator | 2218 | **0.430** | +0.246 | **0.725** | **0.508** | **0.897** |
+| deepseek-v3 | 2218 | 0.576 | +0.458 | 0.602 | 0.326 | 0.867 |
+| deepseek-r1 | 2218 | 0.589 | +0.335 | 0.585 | 0.319 | 0.854 |
+| qwq-plus | 2196 | 0.593 | +0.402 | 0.604 | 0.301 | 0.860 |
+| gpt-4o | 2192 | 0.598 | +0.475 | 0.575 | 0.278 | 0.868 |
 
-EduBenchEvaluator 在全部五项指标上均排名第一，优势非常显著。其 MAE（0.445）比第二名 gpt-4o（0.588）低 24%，Kendall's τ（0.475）比最高的 LLM judge（deepseek-r1, 0.314）高出 51%，Exact Match Rate（0.706）比 LLM judges 的最高水平（qwq-plus, 0.586）高出 20%。
+在精确匹配的测试集上，EduBenchEvaluator 在全部五项核心指标上仍然排名第一。MAE 为 **0.430**，Exact Match 为 **0.725**，Kendall's τ 为 **0.508**，均显著优于所有 LLM judges。
+
+LLM judges 的排名在测试集上发生了微调：deepseek-v3 位居第二（MAE 0.576），deepseek-r1 排第三（MAE 0.589）。四个 LLM judges 之间的差距很小（MAE 范围 0.576—0.598），远小于 EduBenchEvaluator 与它们之间的差距（约 0.15）。值得注意的是，qwq-plus 的 Exact Match（0.604）在 LLM judges 中最高，甚至微超 deepseek-v3（0.602），但其 MAE 和 Kendall's τ 均略逊一筹。
 
 ### 5.2 分数段准确率分析
 
 | 评估器 | 1分准确率 | 2分准确率 | 3分准确率 | 4分准确率 | 5分准确率 | 整体准确率 |
 |--------|----------|----------|----------|----------|----------|----------|
-| EduBenchEvaluator | 37.2% | 18.6% | 17.2% | 60.8% | **89.2%** | **70.6%** |
-| deepseek-r1 | 15.1% | 17.7% | 16.0% | 29.2% | 84.9% | 57.0% |
-| deepseek-v3 | 8.1% | 1.8% | 5.6% | 30.8% | 88.5% | 58.1% |
-| gpt-4o | **0.0%** | 2.8% | 5.8% | 25.9% | 89.3% | 57.1% |
-| qwq-plus | 6.0% | 13.6% | 14.4% | 27.5% | 89.3% | 58.6% |
+| EduBenchEvaluator | **48.1%** | **23.4%** | **21.1%** | **66.1%** | 87.7% | **72.5%** |
+| qwq-plus | 0.0% | 15.2% | 16.3% | 28.2% | **91.0%** | 60.4% |
+| deepseek-v3 | 7.7% | 0.0% | 4.1% | 31.4% | 91.4% | 60.2% |
+| deepseek-r1 | 7.7% | 10.6% | 18.0% | 30.6% | 86.0% | 58.5% |
+| gpt-4o | 0.0% | 0.0% | 5.9% | 25.1% | 90.0% | 57.5% |
 
 ![分数段准确率](deep_analysis_outputs/figures/s5_score_bin_accuracy.png)
 
-**最关键的发现在低分段**：
+精确匹配测试集上的分数段准确率更严格地反映了评估器的真实能力。**最关键的发现仍在低分段**：
 
-当人类打 1 分时，gpt-4o 的准确率为 0%——它从未正确识别出任何一个真正的"差评"样本。deepseek-v3 也仅 8.1%。EduBenchEvaluator 虽然最好（37.2%），但也意味着超过六成的真正低分样本被它错误高估了。
+当人类打 1 分时（52 个测试样本），gpt-4o 和 qwq-plus 的准确率均为 **0%**——它们从未正确识别出真正的"差评"。EduBenchEvaluator 的 1 分准确率达到 **48.1%**，是唯一能有效识别低分样本的评估器。deepseek-r1 和 deepseek-v3 在 1 分段的准确率均仅为 7.7%。
 
-2 分和 3 分区间的情况类似：所有评估器在这些分段的准确率都低于 20%，最差的 deepseek-v3 在 2 分段仅有 1.8%。这意味着所有自动评估器对"中等偏下"质量的回答几乎完全丧失了判别能力。
+5 分区间所有评估器的准确率都在 86—91% 之间，差距很小。这意味着自动评估器的"优势"主要来自高分样本——而测试集中高分样本（4 分 + 5 分）占比 86.7%（1925/2218），因此整体准确率可能高估了评估器的真实区分能力。
 
-相反，5 分区间所有评估器的准确率都在 84—89% 之间，差距很小。这说明自动评估器的"优势"实际上主要来自于对高分样本的正确识别——而这在一个天然偏高分的数据集中并不困难。
-
-**教育场景含义**：如果将自动评估器用于真实教学反馈场景，它几乎不会给学生回答打低分。这在"鼓励式教育"中也许无害，但在需要精准诊断学习薄弱点的场景（如自动评分、错误纠正）中会造成严重的误导。
+**教育场景含义**：在严格的三元组匹配条件下，EduBenchEvaluator 在低分段的检测能力依然最优，但仍有超过一半的真实低分样本被错误高估。在需要精准诊断学习薄弱点的场景中，仅依赖任何单一自动评估器都是不够的。
 
 ### 5.3 校准曲线分析
 
-| 评估器 | 人类1—2分段Gap | 人类3—3.5分段Gap | 人类4—4.5分段Gap | 人类5分段Gap |
-|--------|---------------|-----------------|-----------------|-------------|
-| EduBenchEvaluator | +2.21 | +1.00 | +0.20 | −0.04 |
-| deepseek-r1 | +2.83 | +0.87 | +0.36 | −0.18 |
-| deepseek-v3 | +3.34 | +1.17 | +0.42 | −0.17 |
-| gpt-4o | +3.45 | +1.29 | +0.52 | −0.10 |
-| qwq-plus | +3.46 | +1.04 | +0.37 | −0.12 |
+| 评估器 | 人类1—2分段Gap | 人类3—3.5分段Gap | 人类4—4.5分段Gap | 人类4.5—5分段Gap |
+|--------|---------------|-----------------|-----------------|----------------|
+| EduBenchEvaluator | +1.77 | +0.95 | +0.13 | +0.03 |
+| deepseek-r1 | +3.58 | +0.89 | +0.40 | −0.01 |
+| deepseek-v3 | +3.63 | +1.26 | +0.48 | +0.06 |
+| gpt-4o | +3.85 | +1.27 | +0.53 | +0.05 |
+| qwq-plus | +3.96 | +1.00 | +0.43 | +0.04 |
 
 ![校准曲线](deep_analysis_outputs/figures/s5_calibration_curves.png)
 
-校准曲线清晰地揭示了所有自动评估器的共同失败模式：**对低分样本的系统性高估**。当人类均分为 1—2 分时，所有评估器的预测均值都在 3.3—4.5 之间，偏差达到 2—3.5 分。这种"地板效应"意味着自动评估器在遇到真正差的回答时，几乎"看不到"它差在哪里。
+所有评估器的校准曲线仍呈现相同的系统性模式：**低分段严重高估，高分段几乎完美**。当人类均分在 1—2 分时，qwq-plus 的 Gap 最大（+3.96），预测均值接近 5 分，意味着它几乎无法区分"差"和"好"。EduBenchEvaluator 的 Gap 虽最小但仍达 +1.77，说明低分校准是所有自动评估器的结构性弱点。
 
-EduBenchEvaluator 在低分段的 Gap（+2.21）虽然比其他评估器小约 1 分，但依然存在严重的高估。随着人类评分升高，所有评估器的校准逐步改善——在 4.5—5.0 分段，差距收敛到 ±0.2 分以内。
+deepseek-r1 的低分段 Gap（+3.58）在精确匹配测试集上比之前的粗匹配结果（+3.31）有所上升，说明更严格的匹配标准下，deepseek-r1 在低分区间的高估问题比之前估计的更为严重。
 
-有趣的是，在 5.0 分段，所有 LLM judges 出现了轻微的"低估"（−0.10 到 −0.18），说明它们对满分的预期可能比人类更苛刻。但这个效应很小，不构成实际问题。
+在 4.5—5.0 分段，所有评估器的差距收敛到 ±0.06 以内，校准近乎完美。
 
 ### 5.4 分档一致率
 
@@ -736,32 +741,30 @@ EduBenchEvaluator 在低分段的 Gap（+2.21）虽然比其他评估器小约 1
 
 | 评估器 | 整体一致率 | 低分档识别率 | 中分档识别率 | 高分档识别率 |
 |--------|-----------|-------------|-------------|-------------|
-| EduBenchEvaluator | 93.0% | 33.7% | 21.4% | **98.7%** |
-| gpt-4o | 91.5% | 4.5% | 7.8% | 98.6% |
-| deepseek-v3 | 89.9% | 7.2% | 7.1% | 97.0% |
-| qwq-plus | 88.4% | 12.4% | 13.8% | 94.7% |
-| deepseek-r1 | 87.1% | 18.1% | 16.2% | 93.1% |
+| EduBenchEvaluator | 89.7% | **40.4%** | **21.1%** | **99.2%** |
+| gpt-4o | 86.8% | 0.0% | 5.9% | 99.3% |
+| deepseek-v3 | 86.7% | 4.0% | 4.1% | 99.3% |
+| qwq-plus | 86.0% | 8.2% | 16.3% | 96.9% |
+| deepseek-r1 | 85.4% | 9.1% | 18.0% | 96.2% |
 
-整体分档一致率都很高（87—93%），但这个数字具有欺骗性：高分档占样本的 92%，因此只要"全部猜高"，一致率就能达到约 92%。更有价值的是低分档和中分档的识别率——EduBenchEvaluator 在低分档识别率上达到 33.7%，是 gpt-4o（4.5%）的 7.5 倍。
+测试集中高分档占样本的 86.7%（1925/2218），因此整体分档一致率的绝对数值仍然偏高。更有诊断价值的是低分档和中分档的识别率。EduBenchEvaluator 在低分档识别率上达到 40.4%，是 deepseek-r1（9.1%）的约 4.4 倍，而 gpt-4o 的低分档识别率为 0%。
 
 ### 5.5 各维度准确率
 
 ![Metric × Evaluator 准确率热力图](deep_analysis_outputs/figures/s5_metric_accuracy_heatmap.png)
 
-中英文维度统一映射后，EduBenchEvaluator 在绝大多数维度上的准确率都高于 LLM judges。在 Basic Factual Accuracy 和 Content Relevance & Scope Control 等基础维度上，EduBenchEvaluator 的准确率可达 75—93%。但在 Higher-Order Thinking & Skill Development 和 Reasoning Process Rigor 这两个维度上，所有评估器的准确率都骤降至 40—55% 区间，说明推理和高阶思维维度是评估"天花板"所在。维度统一后各评估器在同一维度上的样本量倍增（中英文合并），准确率估计比之前分开时更加稳健。
+中英文维度统一映射后，EduBenchEvaluator 在绝大多数维度上的准确率都高于 LLM judges。在 Error Identification & Correction Precision（92.3%）和 Basic Factual Accuracy（86.6%）等基础维度上表现最好；在 Content Relevance & Scope Control（80.9%）和 Domain Knowledge Accuracy（77.7%）上也保持了较高准确率。但在 Higher-Order Thinking & Skill Development（52.2%）和 Motivation, Guidance & Positive Feedback（43.5%）维度上，所有评估器的准确率都骤降至 40—55% 区间，说明高阶思维和情感维度是评估"天花板"所在。LLM judges 中，deepseek-r1 在 Basic Factual Accuracy 上与 EduBenchEvaluator 接近（85.8% vs 86.6%），但在大多数其他维度上差距明显。
 
 ### 5.6 同系偏袒分析
 
 | 评估器→ | 评自家(bias) | 评他家(avg bias) | 差值 |
 |---------|------------|-----------------|------|
-| deepseek-r1 评 deepseek-r1 | +0.075 | +0.311 | −0.236 |
-| deepseek-v3 评 deepseek-v3 | +0.425 | +0.331 | +0.094 |
+| deepseek-r1 评 deepseek-r1 | +0.170 | +0.377 | −0.207 |
+| deepseek-v3 评 deepseek-v3 | +0.551 | +0.437 | +0.114 |
 
 ![同系偏袒分析](deep_analysis_outputs/figures/s5_affinity.png)
 
-deepseek-r1 作为评估器时，对自家模型生成的回答反而**更严格**（bias +0.075 vs 评他家均值 +0.311），差距 −0.236。这个看似反直觉的结果可能有两种解释：一是 deepseek-r1 的回答质量本身就是最高的，人类均分已接近满分，评估器反而不容易给出比人类更高的分数；二是 deepseek-r1 可能对自身输出风格的瑕疵更敏感。
-
-deepseek-v3 作为评估器时则呈现轻微的偏袒倾向（评自家 +0.425 vs 评他家 +0.331），但差值（+0.094）在统计上并不显著，不足以构成实质性的偏袒证据。
+测试集上的同系偏袒分析与之前的结论方向一致。deepseek-r1 作为评估器时，对自家模型生成的回答反而**更严格**（bias +0.170 vs 评他家均值 +0.377），差值 −0.207。deepseek-v3 作为评估器时则呈现轻微的偏袒倾向（评自家 +0.551 vs 评他家 +0.437），差值 +0.114。deepseek-r1 的"反偏袒"效应幅度比 deepseek-v3 的正偏袒更大，说明 deepseek-r1 系列在评估场景中表现出更强的自我审视倾向。
 
 ### 5.7 评估器排名柱状图
 
@@ -771,9 +774,7 @@ deepseek-v3 作为评估器时则呈现轻微的偏袒倾向（评自家 +0.425 
 
 ![评估器MAE×学科热力图](deep_analysis_outputs/figures/cat_s5_eval_mae_subject.png)
 
-EduBenchEvaluator 在不同学科上的准确性差异很大：在 English（MAE=0.265）和 Public Administration（MAE=0.273）上表现最好，在 Business Administration（MAE=0.712）和 Mathematics（MAE=0.574）上表现最差。这两组学科的共性分别是"评价标准相对明确、回答质量容易通过表面特征判断"和"需要深层逻辑验证、存在大量低分样本"。
-
-LLM judges 在不同学科上的表现模式与 EduBenchEvaluator 有明显差异：deepseek-r1 作为评估器在 Mathematics 上的 MAE（0.625）反而低于某些非理科学科，可能因为其推理能力在 Mathematics 评估中有所发挥；而 gpt-4o 在 Business Administration 上的 MAE 是所有评估器中最高的，说明通用型大模型在评价商业案例分析时尤为吃力。
+EduBenchEvaluator 在不同学科上的准确性差异仍然很大。MAE 最低的学科为 English（0.292）和 Public Administration（0.303），最高的为 Clinical Medicine（0.635）和 Mathematics（0.628）。EduBenchEvaluator 在 25 个学科中的绝大多数上优于 LLM judges，但在 Sociology 上 deepseek-r1（MAE=0.271）和 deepseek-v3（MAE=0.292）反超 EduBenchEvaluator（MAE=0.375）。Business Administration 是所有评估器的共同难题，LLM judges 的 MAE 均超过 1.0。
 
 ### 5.9 学制层评估器表现
 
@@ -781,40 +782,43 @@ LLM judges 在不同学科上的表现模式与 EduBenchEvaluator 有明显差�
 
 | 学制级别 | EduBench MAE | deepseek-r1 MAE | gpt-4o MAE | 最优评估器 |
 |----------|-------------|----------------|-----------|-----------|
-| Elementary | 0.377 | 0.518 | 0.495 | EduBench |
-| Middle | 0.562 | 0.676 | 0.698 | EduBench |
-| High School | 0.308 | 0.564 | 0.448 | EduBench |
-| Undergraduate | 0.509 | 0.674 | 0.686 | EduBench |
-| Master | 0.410 | 0.580 | 0.560 | EduBench |
-| PhD | 0.459 | 0.576 | 0.560 | EduBench |
+| Elementary | 0.429 | 0.530 | 0.526 | EduBench |
+| Middle | 0.468 | 0.647 | 0.691 | EduBench |
+| High School | 0.362 | 0.566 | 0.494 | EduBench |
+| Undergraduate | 0.488 | 0.674 | 0.674 | EduBench |
+| Master | 0.380 | 0.554 | 0.573 | EduBench |
+| PhD | 0.437 | 0.548 | 0.569 | EduBench |
 
-EduBenchEvaluator 在所有学制级别上都是最优评估器。其最好表现出现在 **High School（MAE=0.308）**，最差表现在 **Middle School（MAE=0.562）**，差距接近两倍。High School 的低 MAE 与该级别整体高均分（4.499）一致——样本普遍高分时评估器更容易"猜对"。Middle School 的高 MAE 则与该级别样本量小、均分低、内容异质性高的特征吻合。
+EduBenchEvaluator 在所有学制级别上仍是最优评估器。测试集上的最好表现出现在 **High School（MAE=0.362）**，最差表现在 **Undergraduate（MAE=0.488）**。Master（MAE=0.380）和 Elementary（MAE=0.429）居中，Middle School（MAE=0.468）在测试集上表现有所改善。
 
 ![评估器Kendall's τ×学制级别](deep_analysis_outputs/figures/cat_s5_eval_tau_edu.png)
 
-Kendall's τ 的学制分布揭示了不同信息：EduBenchEvaluator 在 **High School 的 τ 最高（0.577）**，说明它不仅绝对误差小，排序一致性也最好。但在 **Middle School 的 τ（0.359）明显下滑**，甚至被 qwq-plus（0.399）反超，这意味着 EduBenchEvaluator 在 Middle School 阶段内容上的排序能力有所削弱。
+Kendall's τ 在测试集上的分布格局：EduBenchEvaluator 在 **Master 的 τ 最高（0.570）**，其次为 High School（0.530）和 Elementary（0.511）。在 Middle School 的 τ 有所下滑（0.445），但仍高于所有 LLM judges（qwq-plus 在 Middle School 的 τ 为 0.387，deepseek-v3 为 0.349）。PhD 的 τ 为 0.463，Undergraduate 为 0.492，整体排序能力保持稳健。
 
 ### 5.10 题型层评估器表现
 
 ![评估器MAE×题型热力图](deep_analysis_outputs/figures/cat_s5_eval_mae_qtype.png)
 
-各评估器在 judge（判分）题型上的 MAE 普遍最高（EduBench 0.55—0.60, LLM judges 0.80—1.20），与 automatic_grading 任务的评估难度特征一致。在 mood（心理辅导）和 student_profile（画像建议）题型上评估器 MAE 最低，与这些任务评估标准更偏表面特征的分析一致。
+测试集中包含 8 种题型：Q&A、design、error_correct、helper、material、mood、question_gen、student_profile。Q&A 题型的评估难度最高，EduBenchEvaluator 的 MAE 为 0.703，而 LLM judges 在该题型上的 MAE 均超过 1.0（qwq-plus 达 1.178）。EduBenchEvaluator 在 mood（MAE=0.289）和 student_profile（MAE=0.328）上表现最好。所有评估器中，EduBenchEvaluator 在 7 种题型中 MAE 最低，仅在 question_gen 上与 deepseek-r1（0.434）接近（EduBench=0.472）。
 
 ### 5.11 学科层低分检测能力
 
-当人类均分≤3.0 时，各评估器在不同学科中的检测情况：
+当人类均分≤3.0 时，测试集中各评估器在不同学科中的检测情况：
 
 | 学科 | 低分样本数 | EduBench检测率 | deepseek-r1检测率 | gpt-4o检测率 |
 |------|-----------|---------------|------------------|-------------|
-| Business Administration | 62 | 62.9% | 16.1% | 1.6% |
-| Mathematics | 43 | 16.3% | 60.5% | 32.5% |
-| Basic Medicine | 37 | 8.1% | 37.8% | 13.9% |
-| History | 33 | 30.3% | 48.5% | 23.3% |
-| Biology | 21 | 14.3% | 28.6% | 20.0% |
+| Business Administration | 31 | **64.5%** | 9.7% | 0.0% |
+| Mathematics | 18 | 11.1% | **50.0%** | 33.3% |
+| History | 15 | 46.7% | **46.7%** | 13.3% |
+| Computer Science | 14 | **71.4%** | 0.0% | 0.0% |
+| Law | 11 | **45.5%** | 9.1% | 0.0% |
+| Military Science | 11 | **63.6%** | 18.2% | 9.1% |
+| Biology | 10 | 10.0% | 20.0% | **30.0%** |
+| Psychology | 10 | 0.0% | **30.0%** | 20.0% |
 
-一个出人意料的发现：**在 Mathematics 低分检测上，deepseek-r1（60.5%）远超 EduBenchEvaluator（16.3%）**。这说明 deepseek-r1 的推理能力在判断 Mathematics 回答的对错方面有实际优势——它可能真的"看懂了"推理错误。而在 Business Administration 和 Computer Science 等非推理型学科中，EduBenchEvaluator 的低分检测率（63.9% 和 50.0%）远超所有 LLM judges（≤16.4%）。
+测试集上的低分检测分析显示了学科间的显著差异。EduBenchEvaluator 在 Computer Science（71.4%）、Business Administration（64.5%）和 Military Science（63.6%）中的低分检测率远超所有 LLM judges。而在 Mathematics 中，deepseek-r1（50.0%）依然大幅超过 EduBenchEvaluator（11.1%）。在 Biology 和 Psychology 中，EduBenchEvaluator 的检测率较低甚至为 0%，而 LLM judges 反而有一定的检测能力。
 
-这一发现具有重要的实际意义：**最优的评估策略可能不是单一评估器，而是学科自适应的评估器组合**——在 Mathematics 等推理密集型学科中使用 deepseek-r1 作为辅助，在其他学科中以 EduBenchEvaluator 为主。
+**这一发现在公平对比条件下依然成立**：最优的评估策略可能不是单一评估器，而是学科自适应的评估器组合——在 Mathematics 等推理密集型学科中使用 deepseek-r1 作为辅助，在 Psychology、Biology 等学科中适当参考 LLM judges，在其他学科中以 EduBenchEvaluator 为主。
 
 ---
 
@@ -832,11 +836,13 @@ Kendall's τ 的学制分布揭示了不同信息：EduBenchEvaluator 在 **High
 
 **（6）语言×学制交互：Elementary School 中英文几乎无差异。** 英文在大多数场景下优于中文，但 Elementary School 的中英文差异仅 0.013 分，而 Middle School 差异最大（0.299 分）。语言效应的方向和大小取决于任务类型和学制级别的组合。
 
-**（7）EduBenchEvaluator 全面优于 LLM judges，但存在学科盲点。** 在 MAE、Kendall's τ、Exact Match、分档一致率四项核心指标上全部排名第一。但在 Mathematics 的低分检测上，deepseek-r1（60.5%）远超 EduBenchEvaluator（16.3%），暗示推理密集型学科可能需要学科自适应的评估策略。
+**（7）EduBenchEvaluator 在公平对比下仍全面优于 LLM judges，但存在学科盲点。** 排除 EduBenchEvaluator 训练数据后，在仅测试集（2218 条，基于 question-answer-metric 三元组匹配）上，EduBenchEvaluator 在 MAE（0.430）、Kendall's τ（0.508）、Exact Match（0.725）、分档一致率（89.7%）四项核心指标上全部排名第一。但在 Mathematics 的低分检测上，deepseek-r1（50.0%）大幅超过 EduBenchEvaluator（11.1%），在 Psychology 和 Biology 中 EduBenchEvaluator 的低分检测率甚至为 0%，学科自适应评估策略的建议在公平对比条件下更加强烈。
 
-**（8）所有自动评估器都存在严重的低分盲区。** 当人类评分为 1—2 分时，评估器的预测均值在 3.3—4.5 之间，偏差达 2—3.5 分。gpt-4o 在 1 分段的准确率为 0%。这一问题在 Business Administration 等低均分学科中尤为突出。
+**（8）所有自动评估器都存在严重的低分盲区（测试集验证）。** 在测试集上，当人类评分为 1 分时，gpt-4o 和 qwq-plus 的准确率均为 0%，deepseek-r1 和 deepseek-v3 仅 7.7%。EduBenchEvaluator 在 1 分段达到 48.1%，是所有评估器中最高的，但仍有超过一半的低分样本被高估。2 分段的情况更严峻：gpt-4o 和 deepseek-v3 为 0%，EduBenchEvaluator 也仅 23.4%。
 
-**（9）推理和高阶思维是评估的"天花板"。** Reasoning Process Rigor 和 Higher-Order Thinking & Skill Development 维度的 MAE 普遍在 0.7—1.2 之间，远高于基础维度的 0.2—0.4，说明自动评估器在判断深层教育质量方面仍有根本性局限。
+**（9）推理和高阶思维是评估的"天花板"。** Reasoning Process Rigor 维度的 MAE 在 0.74—1.52 之间（EduBenchEvaluator 为 0.736，LLM judges 均超过 1.4），Higher-Order Thinking & Skill Development 维度的 MAE 在 0.67—0.79 之间，远高于 Basic Factual Accuracy（0.24—0.31）等基础维度，说明自动评估器在判断深层教育质量方面仍有根本性局限。
+
+**（10）训练/测试集分割的方法与影响。** 基于 test.json 中的 (question, answer, metric) 三元组进行三级归一化匹配（精确→空白符归一化→仅字母数字），从 5536 条全量数据中分出 2218 条测试集和 3318 条训练集，另有 601 条 test.json 记录在 JSONL 中无匹配。测试集与训练集的分割确保了评估器分析的公平性——测试集中的数据不在 EduBenchEvaluator 的训练范围内，从而消除了数据泄露的顾虑。
 
 ---
 
