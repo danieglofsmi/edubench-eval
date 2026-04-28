@@ -1,0 +1,19 @@
+{
+    "eval_model": [
+        "gpt-4o",
+        "EduBenchEvaluator"
+    ],
+    "Content Relevance & Scope Control": 0.7489500097945613,
+    "Reasoning Process Rigor": 0.6884970479283521,
+    "Error Identification & Correction Precision": 0,
+    "Scenario Element Integration": 0.4162126835956247,
+    "Clarity, Simplicity & Inspiration": 0.5122342309753258,
+    "Basic Factual Accuracy": 0.8180952393315684,
+    "Role & Tone Consistency": 0.512817504158083,
+    "Personalization, Adaptation & Learning Support": 0.5808669331982248,
+    "Higher-Order Thinking & Skill Development": 0.450646002089915,
+    "Motivation, Guidance & Positive Feedback": 0.4207389472904389,
+    "Domain Knowledge Accuracy": 0.7160861609523348,
+    "Instruction Following & Task Completion": 0.5947826146799445,
+    "mean": 0.5383
+}

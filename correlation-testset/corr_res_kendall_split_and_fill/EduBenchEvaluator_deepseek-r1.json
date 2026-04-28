@@ -1,0 +1,19 @@
+{
+    "eval_model": [
+        "EduBenchEvaluator",
+        "deepseek-r1"
+    ],
+    "Content Relevance & Scope Control": 0.7303866102698104,
+    "Reasoning Process Rigor": 0.6895409802955139,
+    "Error Identification & Correction Precision": 0.7183132273767757,
+    "Scenario Element Integration": 0.5534113498060638,
+    "Clarity, Simplicity & Inspiration": 0.5403940872544734,
+    "Basic Factual Accuracy": 0.8037638898376097,
+    "Role & Tone Consistency": 0.5713138960169296,
+    "Personalization, Adaptation & Learning Support": 0.6339063472812408,
+    "Higher-Order Thinking & Skill Development": 0.5521475276681571,
+    "Motivation, Guidance & Positive Feedback": 0.4496992956404241,
+    "Domain Knowledge Accuracy": 0.7262574110332177,
+    "Instruction Following & Task Completion": 0.6549213796671035,
+    "mean": 0.6353
+}

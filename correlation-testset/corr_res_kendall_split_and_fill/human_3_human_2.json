@@ -1,0 +1,19 @@
+{
+    "eval_model": [
+        "human_3",
+        "human_2"
+    ],
+    "Content Relevance & Scope Control": 0.8349234415997536,
+    "Reasoning Process Rigor": 0.9410186573011564,
+    "Error Identification & Correction Precision": 0.7927161843879302,
+    "Scenario Element Integration": 0.7963891036993681,
+    "Clarity, Simplicity & Inspiration": 0.6625332932373736,
+    "Basic Factual Accuracy": 0.8984998777348593,
+    "Role & Tone Consistency": 0.6616522188425239,
+    "Personalization, Adaptation & Learning Support": 0.9141974789269045,
+    "Higher-Order Thinking & Skill Development": 0.853378051488773,
+    "Motivation, Guidance & Positive Feedback": 0.7141168877435145,
+    "Domain Knowledge Accuracy": 0.7122508583189588,
+    "Instruction Following & Task Completion": 0.7431605368187704,
+    "mean": 0.7937
+}

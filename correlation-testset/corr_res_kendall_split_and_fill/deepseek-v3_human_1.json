@@ -1,0 +1,19 @@
+{
+    "eval_model": [
+        "deepseek-v3",
+        "human_1"
+    ],
+    "Content Relevance & Scope Control": 0.6249613457897658,
+    "Reasoning Process Rigor": 0.7290664296087107,
+    "Error Identification & Correction Precision": 0,
+    "Scenario Element Integration": 0.6343907424588925,
+    "Clarity, Simplicity & Inspiration": 0.5301892129721917,
+    "Basic Factual Accuracy": 0.6628982134117221,
+    "Role & Tone Consistency": 0.3286482820099284,
+    "Personalization, Adaptation & Learning Support": 0.44910000124974286,
+    "Higher-Order Thinking & Skill Development": 0.5409717649557243,
+    "Motivation, Guidance & Positive Feedback": 0.6121587249227741,
+    "Domain Knowledge Accuracy": 0.4459031951808904,
+    "Instruction Following & Task Completion": 0.4741674818550419,
+    "mean": 0.5027
+}
