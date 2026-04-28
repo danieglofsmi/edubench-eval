@@ -1,0 +1,19 @@
+{
+    "eval_model": [
+        "qwq-plus",
+        "gpt-4o"
+    ],
+    "Content Relevance & Scope Control": 0.8138357800879884,
+    "Reasoning Process Rigor": 0.659854535116898,
+    "Error Identification & Correction Precision": 0.4732293358767773,
+    "Scenario Element Integration": 0.5345787093567642,
+    "Clarity, Simplicity & Inspiration": 0.5176850507726797,
+    "Basic Factual Accuracy": 0.7250892033949067,
+    "Role & Tone Consistency": 0.6031143696413163,
+    "Personalization, Adaptation & Learning Support": 0.5800726335086044,
+    "Higher-Order Thinking & Skill Development": 0.5914173992430415,
+    "Motivation, Guidance & Positive Feedback": 0.45573478060897044,
+    "Domain Knowledge Accuracy": 0.6117190740016246,
+    "Instruction Following & Task Completion": 0.6378658633609767,
+    "mean": 0.6003
+}

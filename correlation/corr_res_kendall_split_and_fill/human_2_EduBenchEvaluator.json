@@ -1,0 +1,19 @@
+{
+    "eval_model": [
+        "human_2",
+        "EduBenchEvaluator"
+    ],
+    "Content Relevance & Scope Control": 0.7180050531095548,
+    "Reasoning Process Rigor": 0.7680359188798108,
+    "Error Identification & Correction Precision": 0.7719634570961655,
+    "Scenario Element Integration": 0.7920299384460048,
+    "Clarity, Simplicity & Inspiration": 0.7241375071575143,
+    "Basic Factual Accuracy": 0.7244000011802553,
+    "Role & Tone Consistency": 0.8487255448754507,
+    "Personalization, Adaptation & Learning Support": 0.8973162829615161,
+    "Higher-Order Thinking & Skill Development": 0.7549823818691429,
+    "Motivation, Guidance & Positive Feedback": 0.7194109148570834,
+    "Domain Knowledge Accuracy": 0.783379284296188,
+    "Instruction Following & Task Completion": 0.7693017041597615,
+    "mean": 0.7726
+}

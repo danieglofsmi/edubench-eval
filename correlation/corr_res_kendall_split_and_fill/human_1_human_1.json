@@ -1,0 +1,19 @@
+{
+    "eval_model": [
+        "human_1",
+        "human_1"
+    ],
+    "Content Relevance & Scope Control": 1.0,
+    "Reasoning Process Rigor": 1.0,
+    "Error Identification & Correction Precision": 1.0,
+    "Scenario Element Integration": 1.0,
+    "Clarity, Simplicity & Inspiration": 1.0,
+    "Basic Factual Accuracy": 1.0,
+    "Role & Tone Consistency": 1.0,
+    "Personalization, Adaptation & Learning Support": 1.0,
+    "Higher-Order Thinking & Skill Development": 1.0,
+    "Motivation, Guidance & Positive Feedback": 1.0,
+    "Domain Knowledge Accuracy": 1.0,
+    "Instruction Following & Task Completion": 1.0,
+    "mean": 1.0
+}
